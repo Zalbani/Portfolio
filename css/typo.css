@@ -1,0 +1,281 @@
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.head > h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 90px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+
+.head > h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 85px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+
+.head > button {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.desc > article > h2 {
+    font-size: 25px;
+}
+
+.desc > article > p {
+    font-size: 25px;
+}
+
+.desc > button {
+    font-size: 25px;
+}
+
+.compet > h2, .real > h2, .expe > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    letter-spacing: 0.4px;
+    font-weight: 100;
+}
+
+.compet > article > h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.compet > article > p {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.real > a > figure > figcaption > p:first-of-type {
+    font-size: 17px;
+}
+
+.real > a > figure > figcaption > p:last-of-type {
+    font-size: 12px;
+}
+
+.expe > figure > figcaption > article > h3 {
+    font-size: 29px;
+}
+
+.expe > figure > figcaption > article > p {
+    font-size: 27px;
+}
+
+.contact >a> button {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+ ul  > li > a{
+    font-size: 28px;
+}
+
+footer > h4 {
+    font-size: 14px;
+}
+
+footer > a > p {
+    font-size: 14px;
+}
+
+
+.headp>h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+.headp>h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+}
+.expli>p{
+    font-size: 24px;
+}
+.expli>button{
+    font-size: 24px;
+}
+.typo>figcaption>h4{
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+}
+.typo>figcaption>p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+.typo>p{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+}
+.hc>figcaption>p{
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    letter-spacing: -0.2px;
+    font-weight: 100;
+}
+.detail>article>h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.4px;
+    font-weight: 100;
+}
+.detail>article>h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.4px;
+    font-weight: 100;
+}
+.detail>article>p{
+    font-family: "Open Sans",sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+.end>a>h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.6px;
+    font-weight: 100;
+}
+.maquet>button{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+.spe{
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+.date{
+    font-family: "Roboto", sans-serif;
+    font-size: 27px;
+    font-weight: 100;
+}
+.title {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .compet > h2, .real > h2, .expe > h2, .contact > h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 32px;
+        letter-spacing: 0.2px;
+    }
+
+    .head > h1 {
+        font-size: 36px;
+        letter-spacing: 0.4px;
+    }
+
+    .head > h2 {
+        font-size: 34px;
+        letter-spacing: 0.4px;
+    }
+
+    .desc > article > h2, .desc > article > p {
+        font-size: 16px;
+    }
+
+    .desc > button {
+        font-size: 18px;
+    }
+    .compet>article>h3{
+        font-size: 14px;
+    }
+    .compet>article>p{
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+    .real>a>figure>figcaption>p:first-of-type{
+        font-size: 16px;
+    }
+    .real>a>figure>figcaption>p:last-of-type{
+        font-size: 12px;
+    }
+    .expe>figure>figcaption>article>h3{
+        font-size: 20px;
+    }
+    .expe>figure>figcaption>article>p:first-of-type{
+        font-size: 18px;
+    }
+    .expe>figure>figcaption>article>p:last-of-type{
+        font-size: 16px;
+    }
+    .contact>ul>a>li{
+        font-size: 22px;
+    }
+    .contact>a>button{
+        font-size: 20px;
+    }
+
+
+
+    .headp>h1{
+        font-size: 24px;
+    }
+    .headp>h2{
+        font-size: 22px;
+    }
+    .expli>p{
+        font-size: 18px;
+    }
+    .detail>article>h2{
+        font-size: 26px;
+    }
+    .detail>article>h3{
+        font-size: 24px;
+    }
+    .detail>article>p{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .hc>figcaption>p{
+        font-size: 18px;
+    }
+    .typo>figcaption>h4{
+        font-size: 22px;
+    }
+    .typo>figcaption>p{
+        font-size: 14px;
+    }
+    .typo>p{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .maquet>button{
+        font-size: 24px;
+    }
+    .end>a>h2{
+        font-size: 22px;
+    }
+}

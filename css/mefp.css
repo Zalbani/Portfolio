@@ -1,0 +1,374 @@
+main{
+    background-image: none;
+}
+.headp{
+    background-image: url("../medias/images/fondufinal.jpg");
+}
+.sectionlead{
+    font-size: 32px;
+    text-align: center;
+    margin: 20px;
+}
+
+.sectionlead:first-of-type{
+    margin-bottom: 40px;
+}
+
+.sectionleade:last-of-type{
+    font-size: 38px;
+    margin-top: 100px;
+}
+
+
+.headp {
+    height: auto;
+}
+
+.headp > h1 {
+    margin: 0;
+    padding: 10%;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+.headp > h2 {
+
+    padding: 10%;
+    padding-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.expli {
+    height: auto;
+    padding: 14%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.expli > p {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.expli > button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border: none;
+    text-align: left;
+}
+
+.expli > button > hr {
+    margin-top: 10px;
+    width: 220px;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.expli > img {
+    width: 100%;
+}
+
+.detail {
+    padding: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #EFEFEF;
+    height: auto;
+}
+
+.detail > article > h2 {
+    padding-top: 60px;
+    text-align: center;
+
+}
+
+.grand:first-of-type {
+    background-color: #4BD0D0;
+    width: 245px;
+    margin-bottom: 70px;
+    text-align: center;
+    height: 2px;
+    border: none;
+}
+
+.grand:last-of-type {
+    width: 170px;
+    background-color: #4BD0D0;
+    text-align: center;
+    height: 2px;
+    border: none;
+}
+
+.detail > article > h3 {
+    padding-top: 120px;
+    text-align: center;
+
+}
+
+.petit {
+    text-align: center;
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: #4BD0D0;
+    margin-bottom: 70px;
+}
+
+.petit2 {
+    width: 125px;
+    text-align: center;
+    height: 2px;
+    border: none;
+    background-color: #4BD0D0;
+    margin-bottom: 70px;
+}
+
+.couleur {
+    height: 150px;
+    width: 150px;
+    background-color: #0e76a8;
+}
+
+.detail > article {
+    text-align: center;
+}
+
+.detail > article > p {
+    text-align: left;
+}
+
+.hc {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+
+    background-color: white;
+    margin: 0;
+    margin-left: 4%;
+    margin-right: 4%;
+    -webkit-box-shadow: 3px 1px 6px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 1px 6px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 1px 6px 2px rgba(0, 0, 0, 0.4);
+    transition-duration: .4s;
+}
+
+.hc > figcaption > p {
+    padding: 12px;
+}
+
+.typo {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.typo > figcaption > h4 {
+    color: #4BD0D0;
+    padding-bottom: 20px;
+}
+
+.typo > p {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-left: 10%;
+    width: 35%;
+    height: 80px;
+    padding-top: 5px;
+}
+
+.typo > figcaption {
+    margin-left: 20%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 20%;
+}
+
+.shield {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 200px;
+    padding: 3%;
+}
+
+.maquet {
+    text-align: center;
+    height: auto;
+}
+
+.maquet > img:first-of-type {
+    margin: 10%;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 120px;
+
+}
+.maquet > img {
+    margin: 10%;
+    width: 80%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.maquet > img:last-of-type {
+    margin: 10%;
+    width: 80%;
+    margin-bottom: 60px;
+    margin-top: 80px;
+
+}
+
+.maquet > button {
+    border-radius: 4px;
+    border: 2px #525252 solid;
+    background: none;
+    color: black;
+    padding: 15px;
+    padding-right: 140px;
+    padding-left: 140px;
+    transition-duration: .4s;
+    margin-bottom: 80px;
+}
+
+.maquet > button:hover {
+    color: white;
+    background-color: #525252;
+    transition-duration: .4s;
+}
+
+.end {
+    height: auto;
+}
+
+.end > a > h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: white;
+    text-align: center;
+}
+
+.end > a:first-of-type > h2 {
+    width: 30%;
+    background-color: #525252;
+}
+
+.end > a:last-of-type > h2 {
+    width: 70%;
+    background-color: #4BD0D0;
+}
+
+
+
+/* Bug Fix */
+.expli>p>a{
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: #4b86d0;
+    
+}
+.expli>p>a:hover{
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: #4BD0D0;
+    
+}
+
+.maquet>hr{
+    width: 80%;
+    height: 2px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .expli{
+        padding: 5%;
+    }
+    .expli>button{
+        margin-top: 10px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .expli>button>hr{
+        width: 150px;
+        margin-top: 6px;
+    }
+    .detail{
+        padding: 5%;
+    }
+    .detail>article{
+        text-align: left;
+    }
+    .hc{
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+        margin-bottom: 45px;
+    }
+
+    .couleur{
+        width: 100%;
+        height: 100px;
+    }
+    .detail>article>h2{
+        padding-top: 15px;
+    }
+    .detail>article>h3{
+        padding-top: 55px;
+    }
+    .grand:first-of-type{
+        margin-bottom: 30px;
+        width: 200px;
+    }
+    .maquet>button{
+        margin-bottom: 40px;
+        padding: 10px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .petit{
+        margin-bottom: 50px;
+    }
+    .petit2{
+        margin-bottom: 50px;
+    }
+    .typo>figcaption{
+        margin: 0;
+        width:40%;
+    }
+    .typo>p{
+        margin: 0;
+        padding-left: 25px;
+        width: 60%;
+    }
+    .shield{
+        width: 32%;
+    }
+    .maquet>img:first-of-type{
+        margin: 5%;
+    }
+    .maquet>img:last-of-type{
+        margin: 5%;
+    }
+    .end>a>h2{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

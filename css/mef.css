@@ -1,0 +1,658 @@
+
+.desc{
+    height: auto;
+}
+
+
+.head {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.vanish{
+    display: none;
+}
+
+section {
+    height: 920px;
+}
+
+.head hr:first-of-type {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 70%;
+    color: white;
+    background-color: white;
+    height: 3px;
+    border: none;
+}
+
+.head hr:last-of-type {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    width: 10%;
+    color: white;
+    background-color: white;
+    height: 3px;
+    border: none;
+    display: none;
+}
+
+.head > h1 {
+    padding-top: 190px;
+    margin: 0;
+}
+
+.head > button {
+
+    margin-top: 120px;
+    border-radius: 4px;
+    border: 1px white solid;
+    background: none;
+    color: white;
+    padding: 16px;
+    padding-right: 25px;
+    padding-left: 25px;
+    transition-duration: .4s;
+}
+
+.head > button:hover {
+    transition-duration: .4s;
+    background: white;
+    color: black;
+}
+
+.desc {
+    background-color: #EFEFEF;
+}
+.desc>article{
+    padding-bottom: 15%;
+}
+
+.desc > article > h2 {
+    color: black;
+    padding-bottom: 25px;
+    padding-top: 15%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.desc > article > p {
+    color: #525252;
+    padding-bottom: 15px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.desc > button {
+    margin-top: 120px;
+    margin-left: 15%;
+    background-color: #EFEFEF;
+    border: none;
+    text-align: left;
+}
+
+.desc > button > hr {
+    margin-top: 10px;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.compet > h2 {
+    padding-top: 420px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 60%;
+}
+
+.compet > article {
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 40%;
+    padding-top: 120px;
+}
+
+.compet > article > h3 {
+    color: #4BD0D0;
+}
+
+.compet > article > p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.real {
+    background-color: #EFEFEF;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+}
+
+.real > h2 {
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.real > a {
+    text-decoration: none;
+}
+
+.real > a > figure {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: white;
+    width: 25%;
+    margin: 0;
+    margin-left: 7%;
+    margin-bottom: 7%;
+    -webkit-box-shadow: 3px 1px 6px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 1px 6px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 1px 6px 2px rgba(0, 0, 0, 0.4);
+    transition-duration: .4s;
+    border-radius: 4px;
+}
+
+.real > a > figure:hover {
+    transition-duration: .4s;
+    transform: translate(0, -15px);
+    -webkit-box-shadow: 3px 9px 6px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 9px 6px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 1px 9px 2px rgba(0, 0, 0, 0.4);
+}
+
+.real > a > figure > img {
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.real > a > figure > figcaption {
+    background-color: white;
+    margin: 5%;
+
+}
+
+.real > a > figure > figcaption > p:first-of-type {
+    text-transform: capitalize;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.real > a > figure > figcaption > p:last-of-type {
+    color: #525252;
+}
+
+.expe {
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.expe > h2 {
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+}
+
+.expe > figure > figcaption > article > h3 {
+    font-family: "Roboto Thin", sans-serif;
+    color: #4BD0D0;
+}
+
+.expe > figure > figcaption > article > p:first-of-type {
+    color: white;
+}
+
+.expe > figure > figcaption > article > p:last-of-type {
+    color: #525252;
+}
+
+.expe > figure > figcaption {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: auto;
+    padding-top: 125px;
+    margin-left: 30%;
+}
+
+.expe > figure > img {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    margin-top: 75px;
+    margin-left: 15%;
+}
+
+.contact {
+    background-color: #4BD0D0;
+    text-align: center;
+    height: auto;
+}
+
+.contact > h2 {
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.contact > a  {
+    transition-duration: .4s;
+    margin-bottom: 70px;
+    border-radius: 4px;
+    border: 1px white solid;
+    background: none;
+    color: white;
+    padding: 16px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.contact >a:hover {
+    transition-duration: .4s;
+    background: white;
+    color: #4BD0D0;
+
+}
+ ul {
+    list-style: none;
+    padding: 0;
+     position: absolute;
+     top: 0;
+     right: 0;
+     margin: 18px;
+}
+ ul >li {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+ ul  > li > a {
+    text-decoration: none;
+    width: 40px;
+    height: 60px;
+    border-radius: 30px;
+    list-style: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 40px;
+     padding-left: 2px;
+    transition-duration: .4s;
+}
+ ul > li > a  > i {
+    padding-top: 12px;
+    color: white;
+    transition-duration: .4s;
+}
+ ul > li > a:hover > .fa-envelope-o {
+    transition-duration: .4s;
+    color: #1db7a7;
+}
+ ul  > li > a:hover > .fa-facebook {
+    transition-duration: .4s;
+    color: #3b5998;
+}
+
+ ul  > li >  a:hover > .fa-twitter {
+    transition-duration: .4s;
+    color: #4099FF;
+}
+
+ ul  > li > a:hover > .fa-linkedin {
+    transition-duration: .4s;
+    color: #0e76a8;
+}
+
+ ul  > li > a:hover{
+    transition-duration: .4s;
+    transform: translate(0,-8px);
+}
+
+footer {
+    background-color: #EFEFEF;
+    padding-bottom: 10px;
+}
+
+footer > h4 {
+    color: #525252;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+footer > a {
+    text-decoration: none;
+
+}
+
+footer > a > p {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    border: none;
+    margin: 0 auto;
+    color: #525252;
+    text-align: center;
+}
+
+footer > a > hr {
+    margin-top: 4px;
+    width: 70px;
+    background-color: #525252;
+    border: none;
+    height: 2px;
+}
+
+
+
+@-webkit-keyframes arrow-moveIn {
+    50% {opacity:1;-webkit-transform:translateX(35px);transform:translateX(35px);}
+    100% {opacity:1;-webkit-transform:translateX(35px);transform:translateX(35px);}
+}
+
+@keyframes arrow-moveIn {
+    50% {opacity:1;-webkit-transform:translateX(35px);transform:translateX(35px);}
+    100% {opacity:1;-webkit-transform:translateX(35px);transform:translateX(35px);}
+}
+@-webkit-keyframes arrow-moveOut {
+    50% {opacity:0;-webkit-transform:translateX(35px);transform:translateX(35px);}
+    100% {opacity:0;-webkit-transform:translateX(35px);transform:translateX(35px);}
+}
+@keyframes arrow-moveOut {
+    50% {opacity:0;-webkit-transform:translateX(35px);transform:translateX(35px);}
+    100% {opacity:0;-webkit-transform:translateX(35px);transform:translateX(35px);}
+}
+
+/*off*/
+.arrow {width:40px;height:40px;
+    position: absolute;
+    top: 85px;
+    height: 25%;
+    right: 0px;
+    width: 140px;
+}
+#square path,
+#circle path,
+.arrow-out,
+.arrow-in {fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;}
+.arrow-in {opacity:0;}
+
+
+/*on*/
+.arrow:hover .arrow-out {-webkit-animation:arrow-moveOut 1s ease infinite;animation:arrow-moveOut 1s ease infinite;}
+.arrow:hover .arrow-in {-webkit-animation:arrow-moveIn 1s ease infinite;animation:arrow-moveIn 1s ease infinite;}
+
+.arrow.right {-webkit-transform:scaleX(-1);transform:scaleX(-1);position: absolute;
+    top: 85px;
+    height: 25%;
+    left: 0px;
+    width: 140px;
+}
+
+
+
+
+.expe:before {
+    content: '';
+    position: absolute;
+    top: 250px;
+    height: 80vh;
+    max-height: 640px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: #fff;
+}
+.entries {
+    width: calc(100% - 80px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    left: -5px;
+}
+.entries .entry {
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    clear: both;
+    text-align: right;
+}
+.entries .entry:not(:first-child) {
+    margin-top: -60px;
+}
+.entries .entry .title {
+    position: relative;
+    color: #4BD0D0
+}
+.entries .entry .title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #ffffff;
+    background-color: #2d2d2d;
+    border-radius: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -73px;
+    z-index: 1000;
+}
+.entries .entry .title.big:before {
+    width: 24px;
+    height: 24px;
+    -webkit-transform: translate(8px, -50%);
+    transform: translate(8px, -50%);
+}
+.entries .entry .body {
+    color: #aaa;
+}
+.entries .entry .body p {
+    line-height: 0.7em;
+}
+.entries .entry:nth-child(2n) {
+    text-align: left;
+    float: right;
+}
+.entries .entry:nth-child(2n) .title:before {
+    left: -63px;
+}
+.entries .entry:nth-child(2n) .title.big:before {
+    -webkit-transform: translate(-8px, -50%);
+    transform: translate(-8px, -50%);
+}
+.spe{
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+}
+.date{
+    margin: 0;
+    margin-top: 14px;
+    color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .head > hr:last-of-type {
+        display: none;
+    }
+
+    .head > button {
+        margin-top: 120px;
+    }
+
+    .head > hr:first-of-type {
+        height: 2px;
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    section {
+        height: 600px;
+    }
+
+    .desc > article {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .desc > article > h2, .desc > article > p {
+        padding: 5%;
+        padding-bottom: 4%;
+        padding-top: 0;
+    }
+
+    .desc > button {
+        padding: 0;
+        margin-top: 8%;
+        margin-left: 25px;
+    }
+
+    .desc > button > hr {
+        width: 180px;
+    }
+
+    .compet > h2 {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .compet > article {
+        width: 100%;
+        text-align: center;
+        padding-top: 9%;
+    }
+
+    .real {
+        padding: 0;
+        height: auto;
+    }
+
+    .real > h2 {
+        padding: 40px;
+    }
+
+    .real > a > figure {
+        margin: 0;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .real > a > figure > img {
+        height: auto;
+    }
+
+    .real > a > figure > figcaption {
+        height: 30px;
+        margin: 10%;
+    }
+
+    .real > a > figure > figcaption > br {
+        display: none;
+    }
+
+    .real > a > figure > figcaption > p:last-of-type {
+        margin-top: 10px;
+    }
+
+    .expe {
+        padding: 0;
+    }
+
+    .expe > h2 {
+        padding: 40px;
+    }
+
+    .expe > figure {
+        margin: 0;
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+
+    .expe > figure > img {
+        text-align: center;
+        margin: 0;
+        width: 80px;
+        height: 80px;
+        margin-left: 5%;
+    }
+
+    .expe > figure > figcaption {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .expe>figure>figcaption>article{
+        margin: 10px;
+        margin-right: 0;
+        padding-left: 10%;
+    }
+    .contact>h2{
+        padding-bottom: 10px;
+    }
+    .contact>ul{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .contact>ul>a>li{
+        margin: 15px;
+    }
+    .contact>ul>a>li>i{
+        padding-top: 8px;
+    }
+    .contact > ul > a > li {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .contact>a:last-of-type{
+        margin-bottom: 40px;
+    }
+    .arrow{
+        position: absolute;
+        top: 0px;
+        height: 19%;
+        right: 0px;
+        width: 60px;
+    }
+    .arrow.right{
+        position: absolute;
+        top: 0px;
+        height: 19%;
+        left: 0px;
+        width: 60px;
+    }
+
+
+    body:before {
+        display: none;
+    }
+    .title:before{
+        display: none;
+    }
+    .entries .entry{
+        width: auto;
+    }
+}

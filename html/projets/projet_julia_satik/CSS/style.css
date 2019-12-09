@@ -1,0 +1,2157 @@
+/*** Fixing Lien ***/
+a {
+    text-decoration: none;
+    border: none;
+}
+
+
+/*** Fixing Menu ***/
+
+label > a, span > a {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: auto;
+    height: 20px;
+    padding: 3px 20px;
+    text-decoration: none;
+    color: #45ADA8;
+    border: none;
+}
+
+.navranger {
+    position: fixed;
+    top: 0;
+    display: block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 50px;
+    height: 100vh;
+    background: rgb(157, 224, 173);
+    background: -moz-linear-gradient(top, rgb(157, 224, 173) 0%, rgb(255, 255, 255) 100%);
+    background: -webkit-linear-gradient(top, rgb(157, 224, 173) 0%, rgb(255, 255, 255) 100%);
+    background: -o-linear-gradient(top, rgb(157, 224, 173) 0%, rgb(255, 255, 255) 100%);
+    background: -ms-linear-gradient(top, rgb(157, 224, 173) 0%, rgb(255, 255, 255) 100%);
+
+}
+
+.navranger > .pasbouger {
+
+    bottom: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    transform: rotate(270deg);
+
+}
+
+.pasbouger > p {
+    font-size: 40px;
+    font-family: Athiti, sans-serif;
+    font-weight: 300;
+    position: absolute;
+    right: 80px;
+    padding-bottom: 20px;
+    top: -2px;
+}
+
+/*** Logo en haut a gauche  ***/
+.home {
+    position: fixed;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+/*** réequilibrage  ***/
+.anecdotes > article {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 20px;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.anecdotes > article > h2 {
+    color: #D66EC6;
+    font-family: "Athiti", sans-serif;
+    font-size: 25px;
+}
+
+.anecdotes > article > p {
+    color: black;
+    padding-left: 40px;
+    font-family: "open sans", sans-serif;
+    font-size: 18px;
+}
+main {
+    margin-left: 50px;
+    min-height: 78vh;
+}
+
+h1:first-of-type {
+    padding-top: 10px;
+    font-size: 50px;
+    font-family: "Athiti", sans-serif;
+    text-align: center;
+    color: #547980;
+}
+
+strong {
+    color: #D66EC6;
+}
+
+/*** Page d'accueil  ***/
+
+.tab1 {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 30%;
+}
+
+.tab2 {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 40%;
+    height: 800vh;
+    text-align: center;
+}
+
+.tab3 {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-top: 500px;
+    width: 30%;
+    margin-left: 39%;
+}
+
+.absolution {
+    position: absolute;
+    top: 10px;
+    height: 500vh;
+    margin-left: calc(50% - 193px);
+}
+
+.absolution > svg {
+    Z-index: 2;
+    height: 695px;
+}
+
+.tab1 > a > figure {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin-left: 20%;
+    width: 70%;
+    margin-bottom: 600px;
+    height: auto;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+}
+
+.tab3 > a > figure {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin-right: 20%;
+    width: 70%;
+    margin-bottom: 600px;
+    height: auto;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+}
+
+figure > img {
+    width: 100%;
+    height: auto;
+}
+
+figure > figcaption > article {
+    font-family: "Athiti", sans-serif;
+}
+
+figure > figcaption > article > p:first-of-type {
+    color: #547980;
+    font-size: 15px;
+}
+
+figure > figcaption > article > h2 {
+    color: #D66EC6;
+    font-size: 20px;
+}
+
+figure > figcaption > article > hr {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #547980;
+}
+
+figure > figcaption > article > p:last-of-type {
+    font-family: "open sans", sans-serif;
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+    padding-top: 0;
+}
+
+/*** Page liste article  ***/
+
+.ariane {
+    font-family: "open sans", sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+
+}
+
+.calltoaction {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+    color: white;
+    font-family: "Athiti", sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 220px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 20%;
+    background-color: #D66EC6;
+}
+.conseil>.calltoaction{
+    margin-top: 40px;
+}
+.breve>.calltoaction{
+    margin-top: 75px;
+}
+.anecdotes>.calltoaction{
+
+}
+.entet.spe {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+.entet {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 80px;
+}
+
+.entet > h2 {
+    font-family: "Athiti", sans-serif;
+    font-size: 30px;
+    color: #D66EC6;
+}
+
+.entet > p {
+    padding-left: 40px;
+    font-size: 17px;
+    color: black;
+    font-family: "open sans", sans-serif;
+}
+
+.conteneur {
+    letter-spacing: 0;
+    font-size: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 55%;
+    margin-bottom: 50px;
+    height: auto;
+    text-align: center;
+}
+
+.article > figcaption > article > p {
+    color: black;
+}
+
+.conteneur > a:first-of-type > .article {
+    width: auto;
+
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+}
+
+.conteneur > a:first-of-type > .article > figcaption > article > p:first-of-type {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.conteneur > a:first-of-type > .article > figcaption > article > p:last-of-type {
+    margin: 5px;
+    font-size: 17px;
+}
+
+.conteneur > a:first-of-type > .article > figcaption > article > h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.conteneur > a:first-of-type > .article > figcaption > article > hr {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #65868D;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+a > .article > img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-position: 50% 50%;
+}
+
+a > .article {
+
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 45%;
+    margin: 0;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    margin-bottom: 50px;
+}
+
+a > .article > figcaption > article > h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+a > .article > figcaption > article > p:first-of-type {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+a > .article > figcaption > article > p:last-of-type {
+    margin: 10px;
+    font-size: 15px;
+}
+
+aside {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 20%;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+}
+
+aside > h3 {
+    font-family: "Athiti", sans-serif;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #45ADA8;
+    color: white;
+    margin: 0;
+
+}
+
+aside > h4 {
+    text-align: left;
+    margin: 0;
+    margin-top: 40px;
+    padding-left: 30px;
+    color: #45ADA8;
+    font-family: "Athiti", sans-serif;
+    font-size: 20px;
+}
+
+aside > figure {
+    margin: 0;
+}
+
+aside > hr {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #2D9190;
+}
+
+aside > hr:last-of-type {
+    display: none;
+}
+
+aside > p {
+    margin: 20px;
+    font-family: "open sans", sans-serif;
+    text-align: left;
+    font-size: 15px;
+}
+
+/*** Footer ***/
+
+footer {
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    height: 80px;
+    bottom: 0;
+    background-color: #45ADA8;
+
+}
+
+footer > a {
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-right: 5%;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: #45ADA8;
+    font-family: "Athiti", sans-serif;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+/*** Articles ***/
+
+.articletrue {
+
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.articletrue > figure > img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+.articletrue > figure > figcaption {
+    color: grey;
+    margin: 0;
+    padding: 0;
+    font-family: "open sans", sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.articletrue > h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Athiti", sans-serif;
+    font-size: 35px;
+    color: #D66EC6;
+}
+
+.articletrue > h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Athiti", sans-serif;
+    font-size: 25px;
+    color: #547980;
+}
+
+.articletrue > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding-left: 40px;
+    color: black;
+    font-family: "open sans", sans-serif;
+}
+
+.source {
+    font-family: "open sans", sans-serif;
+    font-size: 15px;
+    color: #2A8C99;
+    margin-left: 80%;
+}
+
+/*** Page Lexique  ***/
+
+.definition {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.lexique > .ariane {
+    color: #547980;
+    text-align: center;
+    font-family: "Athiti", sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.definition > h2 {
+    font-family: "Athiti", sans-serif;
+    font-size: 40px;
+    color: #D66EC6;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+}
+
+.definition > dl >dt {
+    font-family: "open sans", sans-serif;
+    color: #D66EC6;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.definition > dl > dd {
+    font-family: "open sans", sans-serif;
+    color: black;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/*** Mon Histoire ***/
+
+.articlehistoire {
+
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    letter-spacing: 0;
+}
+
+.articlehistoire > img {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.articlehistoire > p:first-of-type {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 59%;
+}
+
+.articlehistoire > h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "Athiti", sans-serif;
+    font-size: 35px;
+    color: #D66EC6;
+}
+
+.articlehistoire > h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Athiti", sans-serif;
+    font-size: 25px;
+    color: #547980;
+}
+
+.articlehistoire > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    padding-left: 40px;
+    color: black;
+    font-family: "open sans", sans-serif;
+}
+
+/*** Informer ***/
+
+.informer > img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-position: 50% 50%;
+}
+
+.informer {
+
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+    width: 24%;
+    margin: 0;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    margin-bottom: 50px;
+    color: black;
+}
+
+.conteneur_informer > a:first-of-type > figure.informer {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.informer > figcaption > article > h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.informer > figcaption > article > p:first-of-type {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.informer > figcaption > article > p:last-of-type {
+    margin: 10px;
+    font-size: 15px;
+}
+
+.conteneur_informer {
+    letter-spacing: 0;
+    font-size: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 50px;
+    height: auto;
+    text-align: center;
+}
+
+button.ecriture {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 15%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 20px;
+    border: none;
+    background-color: #D66EC6;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    box-shadow: 0px 0px 9px 3px rgba(150, 150, 150, 0.2);
+    color: white;
+    font-size: 20px;
+    font-family: "Athiti", sans-serif;
+}
+
+.info_histoire {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: auto;
+}
+
+/*** Page espace Pro ***/
+
+
+
+
+
+.espacepro {
+    width: 60%;
+    margin-left: 20%;
+    height: 800px;
+    background-color: #EAFCCE;
+    text-align: center;
+}
+
+
+
+.espacepro > input, .espacepro > select {
+    width: 80%;
+    border: none;
+    height: 6vh;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-top: 30px;
+    font-family: "open sans", sans-serif;
+    background-color: white;
+    border-radius: 0;
+}
+.espacepro > p:first-of-type {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-family: "open sans", sans-serif;
+    color: #547980;
+    font-size: 20px;
+}
+.espacepro>input:last-of-type {
+    display: inline-block;
+    width: 400px;
+    height: 60px;
+    border: none;
+    background-color: #D66EC6;
+    color: white;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+}
+.espacepro > input.long{
+    padding-top: 30px;
+    padding-bottom: 200px;
+}
+
+/*** Page Connexion ***/
+
+.connexion {
+    width: 60%;
+    margin-left: 20%;
+    height: 380px;
+    background-color: #EAFCCE;
+    text-align: center;
+}
+
+.connexion > p:first-of-type {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-family: "open sans", sans-serif;
+    color: #547980;
+    font-size: 20px;
+}
+
+.connexion > input {
+    width: 80%;
+    border: none;
+    height: 6vh;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-top: 30px;
+    font-family: "open sans", sans-serif;
+}
+
+.mdpoubli {
+    display: inline-block;
+    font-family: "open sans", sans-serif;
+    font-size: 12px;
+    color: #D66EC6;
+    margin-top: 20px;
+    margin-left: 70%;
+}
+
+.conected {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: #D66EC6;
+    color: white;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+
+}
+
+.inscript {
+    display: inline-block;
+    margin-right: 70%;
+    font-family: "open sans", sans-serif;
+    font-size: 16px;
+    color: #547980;
+    margin-top: 20px;
+    border: none;
+}
+
+/*** Page Inscription ***/
+
+.inscription {
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    border: none;
+    background-color: #D66EC6;
+    color: white;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.inscriptionf {
+    width: 60%;
+    margin-left: 20%;
+    height: 70vh;
+    background-color: #EAFCCE;
+    text-align: center;
+}
+
+.inscriptionf > p:first-of-type {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-family: "open sans", sans-serif;
+    color: #547980;
+    font-size: 20px;
+}
+
+.inscriptionf > input {
+    width: 80%;
+    border: none;
+    height: 6vh;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-top: 30px;
+    font-family: "open sans", sans-serif;
+}
+
+/*** Page Bienvenue ***/
+
+.center {
+    text-align: center;
+}
+
+.fond {
+    z-index: 1;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    opacity: 0.1;
+    left: 50px;
+    right: 0;
+}
+
+.midlepos {
+    z-index: 7;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60vh;
+    left: 50px;
+    right: 0;
+
+}
+
+.midlepos > p {
+    width: 40%;
+    margin-left: 30%;
+    font-size: 40px;
+    font-family: "open sans", sans-serif;
+    color: #45ADA8;
+    margin-bottom: 80px;
+}
+
+.midlepos > a {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: white;
+    background-color: #D66EC6;
+    font-family: "open sans", sans-serif;
+    font-size: 25px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*** Page Forum ***/
+
+.salon {
+    position: relative;
+    margin-top: 40px;
+}
+
+.forum {
+    width: 60%;
+    margin-left: 15%;
+}
+
+.forum > h2 {
+    font-family: "Athiti", sans-serif;
+    font-size: 30px;
+    color: #D66EC6;
+}
+
+.forum > p:first-of-type {
+    font-size: 20px;
+    font-family: "open sans", sans-serif;
+    margin-left: 40px;
+
+}
+
+.liste_forum_r {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 50%;
+    border: 1px solid grey;
+}
+
+.liste_forum_r > h3 {
+    font-family: "Athiti", sans-serif;
+    font-size: 25px;
+    color: #45ADA8;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.ligne > img {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 55px;
+    border-radius: 50%;
+    height: 55px;
+    border: 3px solid #D66EC6;
+}
+
+.liste_forum_r > .salon > p:first-of-type {
+    margin: 0;
+    z-index: 1;
+    background-color: white;
+    color: #D66EC6;
+    font-size: 14px;
+    font-family: "open sans", sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid grey;
+    width: 100px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.ligne {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #E5FCC2;
+    margin-bottom: 20px;
+
+}
+
+.ligne > p {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 20%;
+    font-family: "open sans", sans-serif;
+    font-size: 16px;
+    color: grey;
+}
+
+.ligne > p:first-of-type {
+    padding-left: 40px;
+}
+
+.ligne > p:last-of-type {
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 40%;
+}
+
+.categorie_forum {
+    margin-top: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-left: 5%;
+    width: 20%;
+    height: auto;
+
+}
+
+.raconter .categorie_forum, .info>.categorie_forum {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.categorie_forum > ul > li {
+
+    text-align: center;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid grey;
+    border-bottom: none;
+}
+
+.categorie_forum > ul > li > a {
+    color: #45ADA8;
+}
+
+.categorie_forum > ul > li.titre {
+    background-color: #45ADA8;
+}
+
+.categorie_forum > ul > li.titre > a {
+    color: white;
+}
+
+.categorie_forum > ul > li:last-of-type {
+    border: 1px solid grey;
+}
+
+.categorie_forum > .pub {
+    background-color: #8e44ad;
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+}
+
+.pub2 {
+    margin-top: 40px;
+    background-color: #8e44ad;
+    width: 75%;
+    height: 150px;
+    margin-left: 15%;
+}
+
+/*** Page A propos ***/
+
+.apropos {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.apropos > h2, .apropos > h3 {
+    color: #547980;
+    font-family: "Athiti", sans-serif;
+    font-size: 25px;
+    margin: 20px;
+
+}
+
+.apropos > p {
+    color: black;
+    margin: 30px;
+    font-family: "open sans", sans-serif;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+/*** Forum type  ***/
+
+.forum_type {
+    margin-top: 80px;
+    border: 1px solid grey;
+    width: 75%;
+    margin-left: 12.5%;
+
+}
+
+.forum_type > h1 {
+    font-family: "Athiti", sans-serif;
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 15px;
+    color: #45ADA8;
+}
+
+.forum_type > .respond {
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 2.5%;
+    font-family: "open sans", sans-serif;
+    background-color: #E5FCC2;
+    color: black;
+}
+
+.respond > .infopost {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.respond > .infopost > p {
+    font-family: "open sans", sans-serif;
+    font-size: 15px;
+    margin: 2px;
+    color: grey;
+    padding: 0;
+}
+
+.respond > .infopost > img {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 15px;
+    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #D66EC6;
+    border-radius: 50%;
+}
+
+.respond > p {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 75%;
+    padding-left: 40px;
+    font-family: "open sans", sans-serif;
+    font-size: 14px;
+}
+
+.forum_ecriture_association {
+    margin-top: 40px;
+}
+
+.forum_ecriture {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: none;
+    color: black;
+    height: 40px;
+    padding-left: 150px;
+    width: 85%;
+}
+
+.forum_submit {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    border: none;
+    font-family: "open sans", sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #D66EC6;
+    height: 40px;
+    width: 15%;
+}
+
+/*** Profile  ***/
+
+.profile {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+    background-color: #547980;
+    color: white;
+    margin-top: 60px;
+    font-family: "open sans", sans-serif;
+    text-align: center;
+}
+
+.profile > img {
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile > h2 {
+    padding-top: 60px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.profile > p {
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+    padding-bottom: 100px;
+}
+
+/*** Ecriture  ***/
+
+.true_text > .vrai {
+
+    text-align: left;
+    width: 80%;
+    border: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-top: 30px;
+    font-family: "open sans", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 38vh;
+}
+
+.true_text > .valid_post {
+    display: inline-block;
+    height: 60px;
+    border: none;
+    background-color: #B573AB;
+    color: white;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    width: 30%;
+    text-align: center;
+    padding: 0;
+    margin-left: 55%;
+}
+
+/*** 404  ***/
+
+.midlepos > .c404 {
+    margin-top: 20px;
+    font-size: 75px;
+}
+
+.midlepos > .normal {
+    font-size: 18px;
+}
+
+/*** Carte  ***/
+
+.carte > p:first-of-type {
+    font-size: 18px;
+    font-family: "open sans", sans-serif;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.accordion_c {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-top: 80px;
+    width: 40%;
+    margin-left: 10%;
+
+}
+
+.accordion_c h2 {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion_c div, .accordion_c p {
+    display: none;
+}
+
+.accordion_c h2 {
+    padding: 15px 25px;
+    border: 0.5px solid grey;
+    border-bottom: none;
+    color: #547980;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.accordion_c h2:last-of-type {
+    padding: 15px 25px;
+    border: 1px solid grey;
+    color: #547980;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.accordion_c > div {
+    font-size: 13px;
+    font-family: "open sans", sans-serif;
+    margin: 0;
+    background-color: white;
+    border: 1px solid grey;
+    border-bottom: none;
+    border-top: none;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    line-height: 1.3rem;
+}
+
+.carte > img {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 40%;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-bottom: 100px;
+}
+
+/*** Annimation Accueil ***/
+.important {
+    text-align: center;
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    color: #547980;
+    margin-top: 32vh;
+    height: 60vh;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.box {
+    opacity: 0;
+    transition: 1.5s;
+    position: sticky;
+    top: 20px;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.scroll-icon {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 1.2em;
+    font-size: 22px;
+    color: #9DE0AD;
+    border-radius: 2em;
+    border: solid 2px;
+    transition: .4s;
+    bottom: 20px;
+    margin-left: calc(50% - 0.6em);
+}
+
+.scroll-icon::after {
+
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #9DE0AD;
+    border-radius: 50%;
+    animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes scroll-icon {
+    0% {
+        transform: translateY(-12px);
+        opacity: 0;
+    }
+    30%, 70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(12px);
+        opacity: 0;
+    }
+}
+
+#container {
+    width: auto;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.half {
+    width: 50%;
+}
+
+.cbp-so-side:after {
+    clear: both;
+}
+
+#container > figure {
+    width: 100%;
+}
+
+#container img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#container h1 {
+    font-size: 3em
+}
+
+#container p {
+    font-size: 1.5em;
+}
+
+#container .full {
+    width: 100%;
+    display: table;
+    margin: 50px 0;
+}
+
+#container .half:before, .half:after {
+    content: " ";
+    display: table;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
+    -webkit-transition: 4s ease in-out;
+    -moz-transition: 4s ease in-out;
+    transition: 4s ease in-out;
+
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+figure.animate {
+    animation: fadeIn 4s ease;
+}
+
+
+
+blockquote{
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 60px;
+}
+blockquote>p{
+    font-style: italic;
+     font-family: "Open Sans",sans-serif;
+     font-size: 17px;
+     color: #45ADA8;
+     text-align: left;
+ }
+blockquote{
+    margin-top: 40px;
+    font-family: "Athiti", sans-serif;
+    color: #D66EC6;
+    font-size: 20px;
+    text-align: right;
+}
+.entet>blockquote, .forum>blockquote{
+
+    margin: 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/*** TABLETTE ***/
+
+@media only screen and (max-width: 991px) {
+
+    /*** Test ***/
+    main {
+
+    }
+    .espacepro{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .espacepro>input:last-of-type{
+        width: 330px;
+    }
+    .profile{
+        width: 80%;
+        margin-left: 10%;
+
+    }
+    .profile > img{
+        width: 110px;
+        height: 110px;
+        left: calc(50% - 55px);
+    }
+    .profile > p{
+        padding-bottom: 50px;
+    }
+
+    figure > figcaption > article > p:last-of-type {
+        font-size: 12px;
+    }
+
+    .tab1 {
+        width: 30%;
+    }
+
+    .tab1 > a > figure {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .tab3 {
+        width: 30%;
+        margin-left: 39%;
+    }
+
+    .tab3 > a > figure {
+        width: 80%;
+        margin-right: 5%;
+        margin-left: 15%;
+    }
+
+    .tab3 > a:last-of-type > figure {
+        margin-bottom: 0;
+    }
+
+    .box {
+        top: calc(50% - 234px);
+    }
+
+    h1:first-of-type {
+        font-size: 45px;
+    }
+
+    .absolution {
+        margin-left: calc(50% - 130px);
+    }
+
+    .absolution > svg {
+        height: 469px;
+    }
+
+    footer {
+        height: 130px;
+
+    }
+
+    footer > a {
+        margin-top: 30px;
+    }
+
+    .ariane {
+        font-size: 18px;
+    }
+
+    .entet {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .entet > p {
+        font-size: 15px;
+    }
+
+    .conteneur_informer > a:first-of-type > figure.informer {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .conteneur_informer {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .informer {
+        width: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 70px;
+    }
+
+
+    .calltoaction{
+        margin-top: 20px;
+        margin-left: 10%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        width: 180px;
+        font-size: 17px;
+    }
+    .entet.spe{
+        width: 50%;
+        margin: 5%;
+        margin-top: 0;
+
+    }
+
+    .conteneur{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 55%;
+    }
+    .conteneur>a>.article{
+        width: auto;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        margin-bottom: 50px;
+    }
+    aside, .categorie_forum{
+        width: 30%;
+    }
+
+    .forum{
+        width: 80%;
+        margin-left: 10%;
+    }
+.forum>h2{
+    font-size: 28px;
+}
+.forum>p:first-of-type{
+    font-size: 17px;
+}
+.liste_forum_r{
+    margin-left: 5%;
+    width: 90%;
+}
+.pub2{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+.pub{
+    display: none;
+}
+
+.forum_type{
+    width: 90%;
+    margin-left: 5%;
+}
+.forum_type>.respond{
+    width: 100%;
+    margin-left: 0%;
+}
+.respond>p{
+    width: 80%;
+}
+.respond> .infopost> img{
+    width: 50px;
+    height: 50px
+}
+.forum_ecriture{
+    padding-left: 15px;
+}
+.forum_type>h1{
+    margin: 12px 0;
+    font-size: 40px;
+}
+
+    .respond > .infopost > p{
+        font-size: 14px;
+    }
+
+    .accordion_c{
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+    .accordion_c h2, .accordion_c>h2:last-of-type{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .carte>img{
+        margin-top: 30px;
+        width: 49%;
+        margin-bottom: 10px;
+    }
+    .carte > p:first-of-type{
+        font-size: 16px;
+    }
+    .anecdotes > article:first-of-type{
+        margin-top: 20px;
+    }
+    .anecdotes > article{
+        margin: 10px;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .articlehistoire{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .articlehistoire>p{
+        font-size: 15px;
+    }
+    .articlehistoire > h2{
+        font-size: 30px;
+    }
+    .articlehistoire>h3{
+        font-size: 22px;
+    }
+    .articletrue{
+        width: 100%;
+        margin: 0;
+
+
+    }
+    .articletrue>h2{
+        font-size: 30px;
+        padding: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .articletrue>p{
+        font-size: 15px;
+        padding: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .articletrue>h3{
+        font-size: 22px;
+        padding: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .articletrue>figure{
+        margin: 0;
+    }
+    .apropos{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .connexion{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .inscript{
+        margin-right: 60%;
+    }
+    .inscriptionf{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .inscriptionf>.valid_post{
+        width: 33%;
+        height: 50px;
+    }
+    .midlepos{
+        margin-top: 30px;
+
+    }
+    .midlepos>p{
+        font-size: 35px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .lexique > .ariane{
+             margin-right: 10%;
+             margin-left: 10%;
+             width: 80%;
+         }
+}
+
+/*** MOBILE ***/
+
+@media only screen and (max-width: 767px) {
+
+    /*** Test ***/
+    main {
+
+        margin: 0;
+    }
+    .espacepro{
+        width: 100%;
+        margin-left: 0;
+    }
+    h1:first-of-type{
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    .navranger{
+        display: none;
+    }
+    div.menu-left div.btn-container div.btn{
+        margin-left: 5px;
+    }
+
+    div.menu-left.display{
+        background-color: #45ADA8;
+    }
+    div.menu-left{
+        left: -245px;
+        width: 245px;
+    }
+    .informer, .conteneur_informer > a:first-of-type > figure.informer, .conteneur>a>.article, .conteneur>a:first-of-type>.article{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    footer{
+        width: 100%;
+        margin-left: 0;
+    }
+    footer>a{
+        font-size: 14px;
+    }
+    .articletrue>h2{
+        font-size: 27px;
+    }
+    .ariane{
+        font-size: 16px;
+    }
+    .source{
+        margin-left: 60%;
+        margin-top: 35px;
+    }
+    aside{
+        display: none;
+    }
+    .conteneur{
+        width: 100%;
+        margin: 0;
+    }
+    .calltoaction{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 25%;
+    }
+    .entet.spe{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .articlehistoire > img{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .articlehistoire > h2{
+        font-size: 27px;
+    }
+    .articlehistoire > p:first-of-type{
+        width: auto;
+        padding-left: 10%;
+    }
+    .articlehistoire > p{
+        padding-left: 10%;
+    }
+    .true_text > .valid_post{
+        margin-left: 45%;
+        width: 45%;
+        font-size: 14px;
+    }
+    .inscriptionf, .connexion{
+        height: 460px;
+        width: 100%;
+        margin: 0;
+    }
+    .inscriptionf{
+        height: 80vh;
+    }
+    .ligne > img{
+        margin-top: 15px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #D66EC6;
+    }
+    .ligne > p:first-of-type{
+        margin-top: 25px;
+        padding-left: 5px;
+    }
+    .ligne > p:last-of-type{
+        width: 60%;
+    }
+    .categorie_forum{
+        width: 50%;
+    }
+    .anecdotes>article{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .inscription{
+        font-size: 18px;
+    }
+    .carte>img{
+        margin: 0;
+        margin-top: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+    .carte > p:first-of-type, .accordion_c{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .pub2{
+        height: 100px;
+    }
+    .midlepos, .fond{
+        margin-left: 0;
+        margin-right: 0;
+        left: 0;
+    }
+    .fond{
+        height: 70vh;
+        left: 16px;
+    }
+    .midlepos>p{
+        font-size: 33px;
+    }
+    .midlepos > a{
+        font-size: 22px;
+    }
+    .midlepos > .c404{
+        font-size: 60px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .tab1, .tab3{
+        width: 100%;
+    }
+    .tab3{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .tab1 > a > figure,.tab3 > a > figure{
+        margin-bottom: 25px;
+        margin-top: 25px;
+        margin-left: 10%;
+    }
+    figure > figcaption > article > p:last-of-type{
+        font-size: 14px;
+    }
+    .absolution{
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        position: static;
+        height: 360vh;
+    }
+    .important{
+        margin-top: 45vh;
+        height: auto;
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+    }
+    .box{
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        top: calc(40% - 234px);
+        opacity: 1;
+    }
+    .forum_type{
+        border: none;
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .respond> .infopost> img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    .forum_ecriture{
+        border-bottom: 1px solid grey;
+        width: 75%;
+        border-right: none;
+    }
+    .forum_submit{
+        width: 25%;
+    }
+    .respond > .infopost{
+        width: 14%;
+
+    }
+    .respond > p{
+        width: 82%;
+        padding-left: 20px;
+    }
+
+    .definition{
+        width: 80%;
+        font-size: 22px;
+        margin-left: 10%;
+    }
+    .definition > dl > dt {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .definition>dl>dd{
+        font-size: 16px;
+    }
+    .raconter .categorie_forum{
+        display: none;
+    }
+    .accordion .section input[type='radio']:checked ~ .content{
+        padding: 0;
+    }
+    .accordion .section label{
+        padding: 5px 20px;
+        height: 15px;
+    }
+    .absolution > svg{
+        height: 360px;
+        }
+    .absolution{
+        height: 330px;
+        margin-top: 10px;
+        margin-left: calc(50% - 100px);
+    }
+    ul li{
+        padding: 7px;
+    }
+    .inscript{
+        margin-right: 40%;
+        margin-top: 20px;
+    }
+    figure.animate{
+        animation: none;
+    }
+    .midlepos > .c404{
+        margin-bottom: 10px;
+    }
+    .midlepos>p{
+        width: 80%;
+        margin-left: 10%;
+    }
+    blockquote>p{
+        font-style: italic;
+        font-family: "Open Sans",sans-serif;
+        font-size: 17px;
+        color: #45ADA8;
+        text-align: left;
+    }
+    blockquote{
+        font-family: "Athiti", sans-serif;
+        color: #D66EC6;
+        font-size: 20px;
+        width: 80%;
+        margin: 10%;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+    .profile{
+        width: 100%;
+        margin-left: 0;
+    }
+    .profile>img{
+        width: 100px;
+        height: 100px;
+        left: calc(50% - 50px);
+    }
+    .categorie_forum{
+        display: none;
+    }
+}
+
+div.menu-left.display{
+    background-color: #45ADA8;
+}
+.content>ul>li>span>a{
+    color: white;
+}
+#pts_7, #pts_5, #pts_9, #pts_11, #pts_13{
+    animation: grossi 2s linear alternate infinite;
+}
+#pts_4, #pts_6, #pts_8{
+    animation: grossi 3s linear alternate infinite;
+}
+#pts_1, #pts_2, #pts_3{
+    animation: grossi 5s linear alternate infinite;
+}
+#pts_10, #pts_12{
+    animation: grossi 3s linear alternate infinite;
+}
+#pts_14, #pts_15, #pts_16, #pts_17{
+    animation: grossi 4s linear alternate infinite;
+}
+#pts_18, #pts_19{
+    animation: grossi 1s linear alternate infinite;
+}
+#pts_20, #pts_21{
+    animation: grossi 3s linear alternate infinite;
+}
+
+
+
+
+
+
+
+@keyframes grossi {
+    0% {
+        transform-origin: 50% 50%;
+         transform: scale(1.25);
+    }
+
+    100% {
+         transform: scale(0.75);
+    }
+}
