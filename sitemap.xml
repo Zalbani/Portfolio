@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.zalbani.dev/</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.zalbani.dev/html/presentation_projet_fast_cafet.html</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.zalbani.dev/html/presentation_projet_reve_julia.html</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.zalbani.dev/html/presentation_projet_eshl</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.zalbani.dev/html/presentation_diagnostick.html</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.zalbani.dev/html/presentation_carte_interactive.html</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.zalbani.dev/index.html</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.zalbani.dev/html/presentation_projet_eshl.html</loc>
+  <lastmod>2019-12-29T13:12:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
