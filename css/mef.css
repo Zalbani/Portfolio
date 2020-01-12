@@ -15,7 +15,7 @@
 }
 
 section {
-    height: 920px;
+    height: 1050px;
 }
 
 .head hr:first-of-type {
@@ -194,8 +194,6 @@ section {
 
 .expe {
     position: relative;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 .expe > h2 {
