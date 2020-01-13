@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/medias/bg-linkedin.jpg"
+  to = "/"
+  status = 301
+  force = true
+  query = {path = ":path"}
