@@ -4,9 +4,9 @@ MY personnal portfolio
 
 ## Production site
 
-Deploy with heroku
+Deploy with Netlify
 
-https://dev-titube.herokuapp.com/
+https://zalbani.dev/
 
 ## Getting Started 
 
