@@ -10,12 +10,6 @@ https://zalbani.dev/
 
 ## Getting Started 
 
-1. Install packages
-```yarn install```
-
-2. Launch the app
-```yarn start```
-
 
 ### Prerequisites
 
