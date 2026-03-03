@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio personnel développé avec Next.js 14 (App Router), TypeScript et Tailwind CSS.
+Personal portfolio built with Next.js 14 (App Router), TypeScript and Tailwind CSS.
 
 ## Stack
 
@@ -10,9 +10,9 @@ Portfolio personnel développé avec Next.js 14 (App Router), TypeScript et Tail
 - **Framer Motion v11** — animations & custom cursor
 - **next-themes** — dark / light mode
 
-## Lancer le projet
+## Getting started
 
-### Prérequis
+### Prerequisites
 
 - Node.js ≥ 18
 - npm
@@ -23,34 +23,34 @@ Portfolio personnel développé avec Next.js 14 (App Router), TypeScript et Tail
 npm install
 ```
 
-### Développement
+### Development
 
 ```bash
 npx next dev
 ```
 
-Ouvre [http://localhost:3000](http://localhost:3000) dans le navigateur.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Build de production
+### Production build
 
 ```bash
 npx next build
 npx next start
 ```
 
-## Personnalisation
+## Customization
 
-### Données du CV
+### Resume data
 
-Toutes les données (nom, expériences, projets, compétences, formation) sont centralisées dans un seul fichier :
+All data (name, experience, projects, skills, education) is centralized in a single file:
 
 ```
 data/resume.ts
 ```
 
-### Traductions
+### Translations
 
-Les textes sont disponibles en **3 langues** (FR / EN / ES) dans :
+Text content is available in **3 languages** (FR / EN / ES) in:
 
 ```
 messages/
@@ -59,26 +59,26 @@ messages/
   es.json
 ```
 
-### Palette de couleurs
+### Color palette
 
-| Mode  | Fond       | Secondaire | Tertiaire  | Accent     |
+| Mode  | Background | Secondary | Tertiary  | Accent     |
 |-------|------------|------------|------------|------------|
 | Light | `#FFF5E4`  | `#FFE3E1`  | `#FFD1D1`  | `#FF9494`  |
 | Dark  | `#222831`  | `#393E46`  | —          | `#00ADB5`  |
 
-Les couleurs sont définies dans `tailwind.config.ts` et `app/globals.css`.
+Colors are defined in `tailwind.config.ts` and `app/globals.css`.
 
 ## Structure
 
 ```
-app/                  # Routes Next.js (App Router)
+app/                  # Next.js routes (App Router)
 components/
   layout/             # Sidebar, Navigation, MobileNav
   sections/           # About, Experience, Projects, Skills, Education
   ui/                 # GlassCard, CustomCursor, ParticlesBackground…
 data/
-  resume.ts           # Source unique des données CV
-messages/             # Traductions i18n (fr / en / es)
+  resume.ts           # Single source for resume data
+messages/             # i18n translations (fr / en / es)
 lib/
   hooks/              # useActiveSection (scroll-spy)
   utils.ts            # cn() helper

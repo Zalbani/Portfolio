@@ -44,7 +44,7 @@ export async function generateMetadata({
     title: t('title'),
     description: t('description'),
     icons: [
-      // Icône par défaut pour prefers-color-scheme: no-preference et fallback
+      // Default icon for prefers-color-scheme: no-preference and fallback
       { rel: 'icon', url: '/favicon-light.svg' },
       { rel: 'icon', url: '/favicon-light.svg', media: '(prefers-color-scheme: light)' },
       { rel: 'icon', url: '/favicon-dark.svg', media: '(prefers-color-scheme: dark)' },

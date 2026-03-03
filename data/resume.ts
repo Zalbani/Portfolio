@@ -2,7 +2,7 @@ export const about = {
   name: 'Alban Pierson',
   title: 'Full-Stack Developer',
   tagline: 'Driven to build the web of tomorrow.',
-  bio: 'Développeur, passionné par le web et la technologie. Motivé par l\'envie d\'apprendre, j\'aime relever de nouveaux défis et mettre mes compétences au service de l\'innovation.',
+  bio: 'Developer, passionate about web and technology. Driven by a desire to learn, I enjoy taking on new challenges and putting my skills to work in the service of innovation.',
   website: 'www.zalbani.dev',
   github: 'Zalbani',
   email: 'pro.pierson.alban@gmail.com',
@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
   },
   {
     role: 'Web Developer',
-    company: 'Bibliothèque Municipale de Lyon',
+    company: 'Lyon Municipal Library',
     type: 'Work-study — Employee',
     period: '2018 – 2022',
     tasks: [

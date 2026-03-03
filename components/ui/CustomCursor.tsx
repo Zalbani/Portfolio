@@ -1,33 +1,30 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
-// Variables module-level : survivent aux remounts (ex: changement de locale)
+// Module-level variables: persist across remounts (e.g. locale change)
 let _savedX = -200
 let _savedY = -200
 
-export function CustomCursor() {
-  // Initialisation avec la dernière position connue → springs déjà à la bonne position au remount
+function isTouchDevice() {
+  return window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window
+}
+
+function CursorContent() {
   const x = useMotionValue(_savedX)
   const y = useMotionValue(_savedY)
   const hover = useMotionValue(0)
 
-  // Dot : très réactif
   const dotX = useSpring(x, { damping: 35, stiffness: 500, mass: 0.2 })
   const dotY = useSpring(y, { damping: 35, stiffness: 500, mass: 0.2 })
-
-  // Ring : légèrement décalé pour l'effet de traîne
   const ringX = useSpring(x, { damping: 30, stiffness: 300, mass: 0.5 })
   const ringY = useSpring(y, { damping: 30, stiffness: 300, mass: 0.5 })
-
-  // Spring sur le hover pour une transition douce du scale
   const hoverSpring = useSpring(hover, { damping: 22, stiffness: 350 })
   const ringScale = useTransform(hoverSpring, [0, 1], [1, 3])
   const dotScale = useTransform(hoverSpring, [0, 1], [1, 0.4])
 
   useEffect(() => {
-    // Si pas encore de position connue, snapper au premier mouvement
     let ready = _savedX !== -200
 
     const move = (e: MouseEvent) => {
@@ -35,7 +32,6 @@ export function CustomCursor() {
       _savedY = e.clientY
 
       if (!ready) {
-        // Tout premier chargement : snap instantané, zéro animation
         x.set(e.clientX)
         y.set(e.clientY)
         dotX.set(e.clientX)
@@ -57,7 +53,6 @@ export function CustomCursor() {
 
   return (
     <>
-      {/* Dot */}
       <motion.div
         style={{
           x: dotX,
@@ -69,7 +64,6 @@ export function CustomCursor() {
         }}
         className="fixed top-0 left-0 z-[9999] pointer-events-none w-5 h-5 rounded-full bg-white"
       />
-      {/* Ring */}
       <motion.div
         style={{
           x: ringX,
@@ -83,4 +77,15 @@ export function CustomCursor() {
       />
     </>
   )
+}
+
+export function CustomCursor() {
+  const [showCursor, setShowCursor] = useState(false)
+
+  useEffect(() => {
+    if (!isTouchDevice()) setShowCursor(true)
+  }, [])
+
+  if (!showCursor) return null
+  return <CursorContent />
 }
