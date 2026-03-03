@@ -3,7 +3,7 @@
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 
-export function LogoIcon({ className }: { className?: string }) {
+export function LogoIcon({ className, size = 64 }: { className?: string; size?: number }) {
   const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -19,8 +19,8 @@ export function LogoIcon({ className }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 128 128"
-      width="64"
-      height="64"
+      width={size}
+      height={size}
       className={className}
       aria-hidden="true"
     >

@@ -23,12 +23,12 @@ export function About() {
   return (
     <section
       id="about"
-      className="flex flex-col min-h-[calc(100vh-6.5rem)] lg:min-h-screen justify-between lg:justify-center py-14 lg:py-24"
+      className="flex flex-col lg:min-h-screen lg:justify-center lg:py-24"
     >
       <div className="flex flex-col justify-center">
         {/* Mobile: name & role (Sidebar is hidden) */}
-        <div className="lg:hidden mb-6">
-          <LogoIcon className="mb-4" />
+        <div className="lg:hidden mb-5">
+          <LogoIcon size={48} className="mb-3" />
           <h1 className="text-2xl font-bold text-ink dark:text-slate-100 tracking-tight leading-tight mb-1">
             {about.name}
           </h1>
@@ -76,7 +76,7 @@ export function About() {
       </div>
 
       {/* Mobile: social links */}
-      <div className="lg:hidden flex flex-col gap-3 pt-6 pb-8">
+      <div className="lg:hidden flex flex-col gap-3 pt-6 pb-20">
         <span className="text-xs font-medium text-ink-muted dark:text-slate-500 uppercase tracking-wider">
           {t('linksLabel')}
         </span>
