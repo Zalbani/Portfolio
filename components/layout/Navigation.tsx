@@ -10,6 +10,7 @@ export function Navigation() {
   const active = useActiveSection()
 
   const scrollTo = (id: string) => {
+    if (id === 'about') return window.scrollTo({ top: 0, behavior: 'smooth' })
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
