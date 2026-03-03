@@ -12,7 +12,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="flex flex-col min-h-[calc(100vh-5.5rem)] lg:min-h-screen justify-between lg:justify-center py-14 lg:py-24"
+      className="flex flex-col min-h-[calc(100vh-6.5rem)] lg:min-h-screen justify-between lg:justify-center py-14 lg:py-24"
     >
       <div className="flex flex-col justify-center">
         <ScrollReveal>
@@ -63,7 +63,7 @@ export function About() {
       </div>
 
       {/* Mobile: social links at bottom, aligned left */}
-      <div className="lg:hidden flex flex-col gap-3 pt-6 pb-6">
+      <div className="lg:hidden flex flex-col gap-3 pt-6 pb-8">
         <span className="text-xs font-medium text-ink-muted dark:text-slate-500 uppercase tracking-wider">
           {t('linksLabel')}
         </span>
