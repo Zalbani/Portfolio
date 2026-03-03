@@ -38,6 +38,7 @@ const socialLinks = [
 
 export function Sidebar() {
   const t = useTranslations('sidebar')
+  const tAbout = useTranslations('about')
   const { scrollY } = useScroll()
   const nameY = useTransform(scrollY, [0, 300], [0, -15])
 
@@ -78,15 +79,16 @@ export function Sidebar() {
               className="text-xs text-ink-muted dark:text-slate-500 bg-white/50 dark:bg-white/5 px-2.5 py-1 rounded-full border border-white/80 dark:border-white/10"
             >
               {l.lang}
-              <span className="ml-1 text-terra-500 dark:text-[#00ADB5] font-medium">
-                {l.level.split(' ')[0]}
-              </span>
             </span>
           ))}
         </div>
 
         {/* Social */}
-        <div className="flex items-center gap-2 flex-wrap">
+        <div className="space-y-3">
+          <span className="text-xs font-medium text-ink-muted dark:text-slate-500 uppercase tracking-wider block">
+            {tAbout('linksLabel')}
+          </span>
+          <div className="flex items-center gap-2 flex-wrap">
           {socialLinks.map((s) => (
             <a
               key={s.key}
@@ -99,6 +101,7 @@ export function Sidebar() {
               {s.icon}
             </a>
           ))}
+          </div>
         </div>
       </motion.div>
     </motion.aside>
