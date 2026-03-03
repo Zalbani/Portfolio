@@ -18,7 +18,7 @@ export function Education() {
   const tSidebar = useTranslations('sidebar')
 
   return (
-    <section id="education" className="py-12 pb-24 lg:py-24 lg:pb-32">
+    <section id="education" className="py-12 pb-12 lg:py-24 lg:pb-32">
       <ScrollReveal>
         <p className="section-heading dark:text-slate-500">{t('sectionTitle')}</p>
       </ScrollReveal>
