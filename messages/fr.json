@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Alban Pierson — Développeur Full-Stack",
+    "description": "Portfolio d'Alban Pierson, développeur web passionné par la technologie et motivé par l'envie d'apprendre et de relever de nouveaux défis."
+  },
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "education": "Formation"
+  },
+  "sidebar": {
+    "role": "Développeur Full-Stack",
+    "github": "GitHub",
+    "email": "Email",
+    "website": "Site web",
+    "builtBy": "Conçu & développé par"
+  },
+  "about": {
+    "sectionTitle": "À propos",
+    "tagline": "Déterminé à construire le web de demain.",
+    "bio": "Développeur, passionné par le web et la technologie. Motivé par l'envie d'apprendre, j'aime relever de nouveaux défis et mettre mes compétences au service de l'innovation.",
+    "openTo": "Ouvert aux opportunités",
+    "basedIn": "Basé en France",
+    "yearsExp": "7+ ans d'expérience"
+  },
+  "experience": {
+    "sectionTitle": "Expérience",
+    "items": [
+      {
+        "role": "Développeur Full-Stack",
+        "company": "Chiliz",
+        "type": "CDI",
+        "period": "2022 – 2026",
+        "tasks": []
+      },
+      {
+        "role": "Développeur Full-Stack",
+        "company": "Bibliothèque Municipale de Lyon",
+        "type": "Alternance — Employé",
+        "period": "2018 – 2022",
+        "tasks": [
+          "Maintenance (rétro-ingénierie / documentation / mises à jour)",
+          "Intégration (HTML / CSS / Javascript)",
+          "Développement (Symfony / Vue / API)",
+          "Responsable projet (Agile / Kanban / test utilisateur)"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "Projets",
+    "items": [
+      {
+        "name": "Agenda",
+        "role": "Chef de Projet & Développeur",
+        "description": "Durant mon alternance, j'ai été chargé de la refonte d'un outil interne permettant la gestion de l'ensemble des animations proposées par les bibliothèques de la métropole de Lyon. J'ai mené ce projet d'envergure de A à Z, de sa conception à la réalisation et jusqu'à la mise en production.",
+        "tech": ["PHP", "Symfony", "Vue.js", "SQL", "Agile"]
+      },
+      {
+        "name": "Greenhouse",
+        "role": "Développeur",
+        "description": "",
+        "tech": []
+      },
+      {
+        "name": "Oracle",
+        "role": "Développeur",
+        "description": "",
+        "tech": []
+      }
+    ]
+  },
+  "skills": {
+    "sectionTitle": "Compétences",
+    "hardTitle": "Compétences Techniques",
+    "softTitle": "Compétences Humaines",
+    "categories": {
+      "Work": ["Autonomie", "Curiosité", "Éthique", "Résilience"],
+      "Social": ["Esprit d'équipe", "Ouverture d'esprit", "Gestion du stress"],
+      "Dev": ["Rigueur", "Apprentissage", "Motivation", "Persévérance"]
+    }
+  },
+  "education": {
+    "sectionTitle": "Formation",
+    "items": [
+      {
+        "level": "Master — Niveau 7",
+        "title": "Expert informatique et système d'information",
+        "school": "Ynov Campus — Lyon",
+        "period": "2018 – 2022"
+      },
+      {
+        "level": "DUT — Niveau 5",
+        "title": "MMI — Métiers du Multimédia et de l'Internet",
+        "school": "IUT de Belfort-Montbéliard",
+        "period": "2016 – 2018"
+      }
+    ]
+  }
+}

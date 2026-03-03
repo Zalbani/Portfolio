@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Alban Pierson — Full-Stack Developer",
+    "description": "Portfolio of Alban Pierson, a web developer passionate about technology and motivated by the desire to learn and take on new challenges."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education"
+  },
+  "sidebar": {
+    "role": "Full-Stack Developer",
+    "github": "GitHub",
+    "email": "Email",
+    "website": "Website",
+    "builtBy": "Designed & built by"
+  },
+  "about": {
+    "sectionTitle": "About",
+    "tagline": "Driven to build the web of tomorrow.",
+    "bio": "Developer, passionate about web and technology. Driven by a desire to learn, I enjoy taking on new challenges and putting my skills to work in the service of innovation.",
+    "openTo": "Open to opportunities",
+    "basedIn": "Based in France",
+    "yearsExp": "7+ years experience"
+  },
+  "experience": {
+    "sectionTitle": "Experience",
+    "items": [
+      {
+        "role": "Full-Stack Developer",
+        "company": "Chiliz",
+        "type": "Permanent contract",
+        "period": "2022 – 2026",
+        "tasks": []
+      },
+      {
+        "role": "Full-Stack Developer",
+        "company": "Lyon Municipal Library",
+        "type": "Work-study — Employee",
+        "period": "2018 – 2022",
+        "tasks": [
+          "Maintenance (reverse engineering / documentation / updates)",
+          "Web integration (HTML / CSS / Javascript)",
+          "Web development (Symfony / Vue / API)",
+          "Project manager (Agile / Kanban / user tests)"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "Projects",
+    "items": [
+      {
+        "name": "Agenda",
+        "role": "Project Manager & Developer",
+        "description": "During my work-study, I was in charge of redesigning an internal tool managing all events offered by the libraries of the Lyon metropolis. I led this large-scale project from A to Z — from conception to production.",
+        "tech": ["PHP", "Symfony", "Vue.js", "SQL", "Agile"]
+      },
+      {
+        "name": "Greenhouse",
+        "role": "Developer",
+        "description": "",
+        "tech": []
+      },
+      {
+        "name": "Oracle",
+        "role": "Developer",
+        "description": "",
+        "tech": []
+      }
+    ]
+  },
+  "skills": {
+    "sectionTitle": "Skills",
+    "hardTitle": "Hard Skills",
+    "softTitle": "Soft Skills",
+    "categories": {
+      "Work": ["Self-sufficiency", "Curiosity", "Ethic", "Resilient"],
+      "Social": ["Teamwork", "Open-minded", "Stress handling"],
+      "Dev": ["Thorough", "Learning", "Motivated", "Persevering"]
+    }
+  },
+  "education": {
+    "sectionTitle": "Education",
+    "items": [
+      {
+        "level": "Master — Level 7",
+        "title": "IT & Information Systems Expert",
+        "school": "Ynov Campus — Lyon",
+        "period": "2018 – 2022"
+      },
+      {
+        "level": "DUT — Level 5",
+        "title": "MMI — Multimedia and Internet Professions",
+        "school": "IUT de Belfort-Montbéliard",
+        "period": "2016 – 2018"
+      }
+    ]
+  }
+}
