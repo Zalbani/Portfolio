@@ -4,13 +4,7 @@ import { useTranslations } from 'next-intl'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { GlassCard } from '@/components/ui/GlassCard'
 import { about } from '@/data/resume'
-
-type EducationItem = {
-  level: string
-  title: string
-  school: string
-  period: string
-}
+import type { Education as EducationItem } from '@/data/resume'
 
 export function Education() {
   const t = useTranslations('education')
@@ -18,9 +12,9 @@ export function Education() {
   const tSidebar = useTranslations('sidebar')
 
   return (
-    <section id="education" className="py-12 pb-12 lg:py-24 lg:pb-32">
+    <section id="education" className="py-12 pb-0 lg:py-24 lg:pb-32">
       <ScrollReveal>
-        <p className="section-heading dark:text-slate-500">{t('sectionTitle')}</p>
+        <p className="section-heading">{t('sectionTitle')}</p>
       </ScrollReveal>
 
       <div className="relative flex flex-col gap-5">

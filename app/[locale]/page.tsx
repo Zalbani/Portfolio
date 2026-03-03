@@ -16,7 +16,7 @@ export default function Home() {
           <Sidebar />
         </div>
 
-        <main className="lg:w-[58%] px-6 lg:px-16 pt-8 lg:pt-0 pb-28 lg:pb-0">
+        <main className="lg:w-[58%] px-6 lg:px-16 pt-8 lg:pt-0 pb-24 lg:pb-0">
           <About />
           <Projects />
           <Experience />

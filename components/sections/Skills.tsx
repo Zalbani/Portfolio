@@ -33,7 +33,7 @@ export function Skills() {
   return (
     <section id="skills" className="py-12 lg:py-24">
       <ScrollReveal>
-        <p className="section-heading dark:text-slate-500">{t('sectionTitle')}</p>
+        <p className="section-heading">{t('sectionTitle')}</p>
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
@@ -71,7 +71,7 @@ export function Skills() {
         <div className="flex flex-col gap-3">
           {Object.entries(categories).map(([category, skills]) => (
             <GlassCard key={category} className="py-4">
-              <p className="text-xs font-semibold text-terra-400 dark:text-[#00ADB5] uppercase tracking-widest mb-3">
+              <p className="text-xs font-semibold text-ink-muted dark:text-slate-500 uppercase tracking-widest mb-3">
                 {category}
               </p>
               <div className="flex flex-wrap gap-2">

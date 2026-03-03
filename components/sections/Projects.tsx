@@ -4,22 +4,16 @@ import { useTranslations } from 'next-intl'
 import { GlassCard } from '@/components/ui/GlassCard'
 import { TechBadge } from '@/components/ui/TechBadge'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
-
-type ProjectItem = {
-  name: string
-  role: string
-  description: string
-  tech: string[]
-}
+import type { Project } from '@/data/resume'
 
 export function Projects() {
   const t = useTranslations('projects')
-  const items = t.raw('items') as ProjectItem[]
+  const items = t.raw('items') as Project[]
 
   return (
     <section id="projects" className="py-12 lg:py-24">
       <ScrollReveal>
-        <p className="section-heading dark:text-slate-500">{t('sectionTitle')}</p>
+        <p className="section-heading">{t('sectionTitle')}</p>
       </ScrollReveal>
 
       <div className="flex flex-col gap-5">

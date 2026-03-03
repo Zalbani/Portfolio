@@ -5,16 +5,16 @@
   },
   "nav": {
     "about": "À propos",
-    "experience": "Expérience",
+    "experience": "Expériences",
     "projects": "Projets",
     "skills": "Compétences",
-    "education": "Formation"
+    "education": "Formations"
   },
   "sidebar": {
     "role": "Développeur Full-Stack",
     "github": "GitHub",
     "email": "Email",
-    "website": "Site web",
+    "linkedin": "LinkedIn",
     "builtBy": "Conçu & développé par"
   },
   "about": {
@@ -27,7 +27,7 @@
     "yearsExp": "7+ ans d'expérience"
   },
   "experience": {
-    "sectionTitle": "Expérience",
+    "sectionTitle": "Expériences",
     "items": [
       {
         "role": "Développeur Full-Stack",
@@ -75,16 +75,16 @@
   },
   "skills": {
     "sectionTitle": "Compétences",
-    "hardTitle": "Compétences Techniques",
-    "softTitle": "Compétences Humaines",
+    "hardTitle": "Techniques",
+    "softTitle": "Humaines",
     "categories": {
-      "Work": ["Autonomie", "Curiosité", "Éthique", "Résilience"],
+      "Travail": ["Autonomie", "Curiosité", "Éthique", "Résilience"],
       "Social": ["Esprit d'équipe", "Ouverture d'esprit", "Gestion du stress"],
       "Dev": ["Rigueur", "Apprentissage", "Motivation", "Persévérance"]
     }
   },
   "education": {
-    "sectionTitle": "Formation",
+    "sectionTitle": "Formations",
     "items": [
       {
         "level": "Master — Niveau 7",

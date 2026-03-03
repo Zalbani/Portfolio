@@ -5,7 +5,7 @@
   },
   "nav": {
     "about": "About",
-    "experience": "Experience",
+    "experience": "Experiences",
     "projects": "Projects",
     "skills": "Skills",
     "education": "Education"
@@ -14,7 +14,7 @@
     "role": "Full-Stack Developer",
     "github": "GitHub",
     "email": "Email",
-    "website": "Website",
+    "linkedin": "LinkedIn",
     "builtBy": "Designed & built by"
   },
   "about": {
@@ -27,7 +27,7 @@
     "yearsExp": "7+ years experience"
   },
   "experience": {
-    "sectionTitle": "Experience",
+    "sectionTitle": "Experiences",
     "items": [
       {
         "role": "Full-Stack Developer",

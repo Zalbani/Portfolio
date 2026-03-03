@@ -2,13 +2,14 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
-import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getTranslations } from 'next-intl/server'
+import { getTranslations } from 'next-intl/server'
+import { LocaleProvider } from '@/components/providers/LocaleProvider'
 import { ThemeProvider } from 'next-themes'
 import { routing } from '@/i18n/routing'
 import { ParticlesBackground } from '@/components/ui/ParticlesBackground'
 import { TopRightControls } from '@/components/layout/TopRightControls'
 import { FaviconSwitcher } from '@/components/ui/FaviconSwitcher'
+import { LocaleAnimatedContent } from '@/components/ui/LocaleAnimatedContent'
 import '../globals.css'
 
 const CustomCursor = dynamic(
@@ -64,23 +65,34 @@ export default async function LocaleLayout({
     notFound()
   }
 
-  const messages = await getMessages()
+  const themeScript = `
+    (function() {
+      var theme = localStorage.getItem('theme');
+      var resolved = theme === 'dark' || theme === 'light' ? theme
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var bg = resolved === 'dark' ? '#222831' : '#FFFBF8';
+      document.documentElement.classList.add(resolved);
+      document.documentElement.style.backgroundColor = bg;
+      document.body.style.backgroundColor = bg;
+    })();
+  `
 
   return (
     <html lang={locale} className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} suppressHydrationWarning />
+      </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NextIntlClientProvider messages={messages}>
+          <LocaleProvider initialLocale={locale as 'en' | 'fr'}>
             <ThemeTransitionOverlay />
             <FaviconSwitcher />
             <ParticlesBackground />
             <SpotlightEffect />
             <CustomCursor />
             <TopRightControls />
-            <div className="relative z-10">
-              {children}
-            </div>
-          </NextIntlClientProvider>
+            <LocaleAnimatedContent>{children}</LocaleAnimatedContent>
+          </LocaleProvider>
         </ThemeProvider>
       </body>
     </html>

@@ -3,14 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { GlassCard } from '@/components/ui/GlassCard'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
-
-type ExperienceItem = {
-  role: string
-  company: string
-  type: string
-  period: string
-  tasks: string[]
-}
+import type { Experience as ExperienceItem } from '@/data/resume'
 
 export function Experience() {
   const t = useTranslations('experience')
@@ -19,7 +12,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-12 lg:py-24">
       <ScrollReveal>
-        <p className="section-heading dark:text-slate-500">{t('sectionTitle')}</p>
+        <p className="section-heading">{t('sectionTitle')}</p>
       </ScrollReveal>
 
       <div className="relative flex flex-col gap-5">
