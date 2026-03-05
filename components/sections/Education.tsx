@@ -54,20 +54,18 @@ export function Education() {
                 className="block flex-1"
               >
                 <GlassCard className="group">
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                  <div className="flex items-start justify-between gap-2">
                     <div>
                       <span className="text-xs font-medium text-ink-muted dark:text-slate-500 uppercase tracking-wider">
                         {edu.level}
                       </span>
                       <h3 className="font-semibold text-ink dark:text-slate-100 text-sm mt-0.5">{edu.title}</h3>
                       <p className="text-sm text-terra-500 dark:text-[#00ADB5] font-medium mt-0.5">{edu.school}</p>
-                    </div>
-                    <div className="flex items-center gap-2 flex-none">
-                      <span className="text-xs text-ink-muted dark:text-slate-500 font-medium">
+                      <span className="text-xs text-ink-muted dark:text-slate-500 font-medium mt-1 block">
                         {edu.period}
                       </span>
-                      <ExternalLinkIcon />
                     </div>
+                    <ExternalLinkIcon />
                   </div>
                 </GlassCard>
               </motion.a>
