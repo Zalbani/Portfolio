@@ -17,12 +17,12 @@ const iconMap: Record<string, string> = {
   react: `${devIconsBase}/react/react-original.svg`,
   nextjs: `${devIconsBase}/nextjs/nextjs-original.svg`,
   nodejs: `${devIconsBase}/nodejs/nodejs-original.svg`,
+  nestjs: `${devIconsBase}/nestjs/nestjs-original.svg`,
   symfony: `${devIconsBase}/symfony/symfony-original.svg`,
   docker: `${devIconsBase}/docker/docker-original.svg`,
-  git: `${devIconsBase}/git/git-original.svg`,
+  redis: `${devIconsBase}/redis/redis-original.svg`,
   figma: `${devIconsBase}/figma/figma-original.svg`,
   // Simple Icons
-  claude: `${simpleIconsBase}/anthropic`,
   ollama: `${simpleIconsBase}/ollama`,
 }
 
@@ -48,7 +48,6 @@ export function Skills() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.04, duration: 0.3 }}
-              whileHover={{ y: -3 }}
               className="glass rounded-xl p-3 flex flex-col items-center gap-2 cursor-default hover:shadow-[0_4px_16px_rgba(255,148,148,0.15)] dark:hover:shadow-[0_4px_16px_rgba(0,173,181,0.15)] transition-shadow duration-300"
             >
               <img

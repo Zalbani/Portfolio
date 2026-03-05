@@ -15,14 +15,19 @@ function CursorContent() {
   const x = useMotionValue(_savedX)
   const y = useMotionValue(_savedY)
   const hover = useMotionValue(0)
+  const external = useMotionValue(0)
 
   const dotX = useSpring(x, { damping: 50, stiffness: 1200, mass: 0.05 })
   const dotY = useSpring(y, { damping: 50, stiffness: 1200, mass: 0.05 })
   const ringX = useSpring(x, { damping: 45, stiffness: 700, mass: 0.15 })
   const ringY = useSpring(y, { damping: 45, stiffness: 700, mass: 0.15 })
   const hoverSpring = useSpring(hover, { damping: 35, stiffness: 500 })
+  const externalSpring = useSpring(external, { damping: 30, stiffness: 400 })
   const ringScale = useTransform(hoverSpring, [0, 1], [1, 3])
   const dotScale = useTransform(hoverSpring, [0, 1], [1, 0.4])
+  const defaultOpacity = useTransform(externalSpring, [0, 1], [1, 0])
+  const iconOpacity = useTransform(externalSpring, [0, 1], [0, 1])
+  const iconScale = useTransform(externalSpring, [0, 1], [0.4, 1])
 
   useEffect(() => {
     let ready = _savedX !== -200
@@ -44,12 +49,14 @@ function CursorContent() {
         y.set(e.clientY)
       }
       const t = e.target as HTMLElement
+      const isExternal = Boolean(t.closest('[data-cursor="external"]'))
       hover.set(t.closest('a, button, [data-hover]') ? 1 : 0)
+      external.set(isExternal ? 1 : 0)
     }
 
     window.addEventListener('mousemove', move)
     return () => window.removeEventListener('mousemove', move)
-  }, [x, y, hover, dotX, dotY, ringX, ringY])
+  }, [x, y, hover, external, dotX, dotY, ringX, ringY])
 
   return (
     <>
@@ -61,6 +68,7 @@ function CursorContent() {
           translateX: '-50%',
           translateY: '-50%',
           mixBlendMode: 'difference',
+          opacity: defaultOpacity,
           willChange: 'transform',
         }}
         className="fixed top-0 left-0 z-[9999] pointer-events-none w-5 h-5 rounded-full bg-white"
@@ -73,10 +81,38 @@ function CursorContent() {
           translateX: '-50%',
           translateY: '-50%',
           mixBlendMode: 'difference',
+          opacity: defaultOpacity,
           willChange: 'transform',
         }}
         className="fixed top-0 left-0 z-[9998] pointer-events-none w-5 h-5 rounded-full border border-white opacity-50"
       />
+      <motion.div
+        style={{
+          x: dotX,
+          y: dotY,
+          opacity: iconOpacity,
+          scale: iconScale,
+          translateX: '-50%',
+          translateY: '-50%',
+          willChange: 'transform, opacity',
+        }}
+        className="fixed top-0 left-0 z-[9999] pointer-events-none flex items-center justify-center w-16 h-16 rounded-full bg-terra-500/70 dark:bg-teal-400/70 backdrop-blur-sm"
+      >
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="w-7 h-7 dark:stroke-[#222831]"
+          animate={{ x: [0, 0, 4, -0.5, 0], y: [0, 0, -4, 0.5, 0] }}
+          transition={{ duration: 2, repeat: Infinity, times: [0, 0.55, 0.65, 0.78, 1], ease: ['linear', 'easeOut', 'easeOut', 'easeInOut'] }}
+        >
+          <path d="M7 17L17 7M17 7H7M17 7V17" />
+        </motion.svg>
+      </motion.div>
     </>
   )
 }

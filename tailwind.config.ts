@@ -13,16 +13,7 @@ const config: Config = {
         pastel: {
           violet: '#00ADB5',
           rose: '#FFE3E1',
-          blue: '#bfdbfe',
-          green: '#a7f3d0',
-          yellow: '#fde68a',
           terra: '#FFD1D1',
-        },
-        accent: {
-          violet: '#00ADB5',
-          rose: '#FF9494',
-          blue: '#3b82f6',
-          green: '#10b981',
         },
         terra: {
           50:  '#fff7f7',
@@ -44,19 +35,6 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-cal)', 'var(--font-inter)', 'sans-serif'],
-      },
-      backdropBlur: {
-        xs: '2px',
-      },
-      animation: {
-        'float': 'float 6s ease-in-out infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
       },
     },
   },

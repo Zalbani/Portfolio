@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --font-inter: 'Inter', system-ui, sans-serif;
-
-  /* Palette accents */
-  --pastel-violet: #00ADB5;
-  --pastel-rose: #FFE3E1;
-  --pastel-blue: #bfdbfe;
-  --pastel-green: #a7f3d0;
-  --pastel-yellow: #fde68a;
-
   /* Light mode */
   --bg: #FFFBF8;
   --glass-bg: rgba(255, 251, 248, 0.7);
@@ -144,7 +135,7 @@ body::before {
     width: 48px;
     height: 1px;
     margin-top: 1rem;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 148, 148, 0.5);
   }
   .dark .section-heading::after {
     background: rgba(148, 163, 184, 0.5);

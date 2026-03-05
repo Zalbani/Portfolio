@@ -13,18 +13,21 @@ const socialLinks = [
     href: `https://github.com/${about.github}`,
     hoverText: `@${about.github}`,
     icon: <GitHubIcon />,
+    external: true,
   },
   {
     key: 'linkedin' as const,
     href: `https://www.linkedin.com/in/${about.linkedin}/`,
     hoverText: about.linkedinHovertext,
     icon: <LinkedInIcon />,
+    external: true,
   },
   {
     key: 'email' as const,
     href: `mailto:${about.email}`,
     hoverText: about.email,
     icon: <EmailIcon />,
+    external: false,
   },
 ]
 
@@ -73,8 +76,8 @@ export function Sidebar() {
               <a
                 key={s.key}
                 href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={s.external ? '_blank' : undefined}
+                rel={s.external ? 'noopener noreferrer' : undefined}
                 aria-label={t(s.key)}
                 className="group relative z-0 hover:z-50 w-9 h-9 glass rounded-xl flex items-center justify-center text-ink-secondary dark:text-slate-400 hover:text-terra-600 dark:hover:text-[#00ADB5] hover:bg-pastel-terra/30 dark:hover:bg-[#00ADB5]/10 transition-all duration-200"
               >

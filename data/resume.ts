@@ -19,6 +19,7 @@ export type Project = {
   role: string
   description: string
   tech: string[]
+  link?: string
 }
 
 export type HardSkill = {
@@ -28,17 +29,22 @@ export type HardSkill = {
 }
 
 export const hardSkills: HardSkill[] = [
+  // Languages
   { name: 'TypeScript', icon: 'typescript' },
   { name: 'PHP', icon: 'php' },
   { name: 'Solidity', icon: 'solidity' },
+  // Frontend
   { name: 'React', icon: 'react' },
   { name: 'Next.js', icon: 'nextjs', invertOnDark: true },
+  // Backend
   { name: 'Node.js', icon: 'nodejs' },
+  { name: 'NestJS', icon: 'nestjs' },
   { name: 'Symfony', icon: 'symfony', invertOnDark: true },
+  // Infra
   { name: 'Docker', icon: 'docker' },
-  { name: 'Claude', icon: 'claude', invertOnDark: true },
+  { name: 'Redis', icon: 'redis' },
+  // Tools
   { name: 'Ollama', icon: 'ollama', invertOnDark: true },
-  { name: 'Git', icon: 'git' },
   { name: 'Figma', icon: 'figma' },
 ]
 
@@ -47,4 +53,5 @@ export type Education = {
   title: string
   school: string
   period: string
+  link: string
 }

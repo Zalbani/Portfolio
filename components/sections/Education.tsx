@@ -1,10 +1,28 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { motion } from 'framer-motion'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { GlassCard } from '@/components/ui/GlassCard'
 import { about } from '@/data/resume'
 import type { Education as EducationItem } from '@/data/resume'
+
+function ExternalLinkIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-3.5 h-3.5 text-terra-500 dark:text-teal-400 shrink-0"
+    >
+      <path d="M7 17L17 7M17 7H7M17 7V17" />
+    </svg>
+  )
+}
 
 export function Education() {
   const t = useTranslations('education')
@@ -26,20 +44,33 @@ export function Education() {
               <div className="relative z-10 flex-none">
                 <span className="block w-4 h-4 rounded-full mt-1 bg-terra-500 dark:bg-pastel-violet ring-2 ring-terra-200 dark:ring-[#00ADB5]/30" />
               </div>
-              <GlassCard className="flex-1">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
-                  <div>
-                    <span className="text-xs font-medium text-ink-muted dark:text-slate-500 uppercase tracking-wider">
-                      {edu.level}
-                    </span>
-                    <h3 className="font-semibold text-ink dark:text-slate-100 text-sm mt-0.5">{edu.title}</h3>
-                    <p className="text-sm text-terra-500 dark:text-[#00ADB5] font-medium mt-0.5">{edu.school}</p>
+              <motion.a
+                href={edu.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="external"
+                whileHover={{ y: -4 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+                className="block flex-1"
+              >
+                <GlassCard className="group">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                    <div>
+                      <span className="text-xs font-medium text-ink-muted dark:text-slate-500 uppercase tracking-wider">
+                        {edu.level}
+                      </span>
+                      <h3 className="font-semibold text-ink dark:text-slate-100 text-sm mt-0.5">{edu.title}</h3>
+                      <p className="text-sm text-terra-500 dark:text-[#00ADB5] font-medium mt-0.5">{edu.school}</p>
+                    </div>
+                    <div className="flex items-center gap-2 flex-none">
+                      <span className="text-xs text-ink-muted dark:text-slate-500 font-medium">
+                        {edu.period}
+                      </span>
+                      <ExternalLinkIcon />
+                    </div>
                   </div>
-                  <span className="text-xs text-ink-muted dark:text-slate-500 font-medium flex-none">
-                    {edu.period}
-                  </span>
-                </div>
-              </GlassCard>
+                </GlassCard>
+              </motion.a>
             </div>
           </ScrollReveal>
         ))}

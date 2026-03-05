@@ -23,18 +23,23 @@
     "tagline": "Driven to build the web of tomorrow.",
     "bio": "Developer, passionate about web and technology. Driven by a desire to learn, I enjoy taking on new challenges and putting my skills to work in the service of innovation.",
     "openTo": "Open to opportunities",
-    "basedIn": "Based in France",
+    "basedIn": "Based in Lyon, France",
     "yearsExp": "7+ years experience"
   },
   "experience": {
     "sectionTitle": "Experiences",
     "items": [
       {
-        "role": "Full-Stack Developer",
+        "role": "Web3 Engineer",
         "company": "Chiliz",
         "type": "Permanent contract",
         "period": "2022 – 2026",
-        "tasks": []
+        "tasks": [
+          "Frontend & Web3 (Next.js / Wagmi / Viem / UX-UI)",
+          "Backend (NestJS / REST API / data architecture)",
+          "Blockchain (smart contracts / DApps / NFT / security)",
+          "DevOps (Docker / observability / monitoring)"
+        ]
       },
       {
         "role": "Full-Stack Developer",
@@ -54,22 +59,25 @@
     "sectionTitle": "Projects",
     "items": [
       {
-        "name": "Agenda",
-        "role": "Project Manager & Developer",
-        "description": "During my work-study, I was in charge of redesigning an internal tool managing all events offered by the libraries of the Lyon metropolis. I led this large-scale project from A to Z — from conception to production.",
-        "tech": ["PHP", "Symfony", "Vue.js", "SQL", "Agile"]
+        "name": "Oracle",
+        "role": "Co-Architect",
+        "description": "Designed and built a resilient backend architecture for publishing decentralized price feeds on-chain. Three decoupled services with fault tolerance, rate limiting, and async job orchestration, built to handle high-frequency data from multiple exchanges (Binance, Bybit, Bitget) reliably.",
+        "tech": ["TypeScript", "Node.js", "Redis", "BullMQ", "Docker"],
+        "link": ""
       },
       {
         "name": "Greenhouse",
-        "role": "Developer",
-        "description": "",
-        "tech": []
+        "role": "Full-Stack Developer",
+        "description": "Web3 platform connecting creators and sponsors within the Chiliz ecosystem. Involved taking over an external codebase, reverse engineering it, cleaning up technical debt, and bringing it to production.",
+        "tech": ["TypeScript", "Next", "Nest", "Tailwind", "Wagmi", "Viem"],
+        "link": "https://greenhouse.chiliz.com/"
       },
       {
-        "name": "Oracle",
-        "role": "Developer",
-        "description": "",
-        "tech": []
+        "name": "Agenda",
+        "role": "Project Manager & Developer",
+        "description": "Redesign of an internal tool managing all events offered by the libraries of the Lyon metropolis, led from A to Z, from conception to production.",
+        "tech": ["PHP", "Symfony", "Vue.js", "SQL", "Agile"],
+        "link": "https://www.bm-lyon.fr/les-rendez-vous-des-bibliotheques-municipales-de-lyon/#/search-result?type=Apprendre%20et%20%C3%AAtre%20accompagn%C3%A9"
       }
     ]
   },
@@ -90,13 +98,15 @@
         "level": "Master — Level 7",
         "title": "IT & Information Systems Expert",
         "school": "Ynov Campus — Lyon",
-        "period": "2018 – 2022"
+        "period": "2018 – 2022",
+        "link": "https://www.ynov.com/"
       },
       {
         "level": "DUT — Level 5",
         "title": "MMI — Multimedia and Internet Professions",
         "school": "IUT de Belfort-Montbéliard",
-        "period": "2016 – 2018"
+        "period": "2016 – 2018",
+        "link": "https://www.iut-nfc.univ-fcomte.fr/"
       }
     ]
   }
