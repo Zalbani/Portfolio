@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import { routing } from '@/i18n/routing'
 
@@ -42,6 +42,7 @@ export function LocaleProvider({
   }, [pendingLocale])
 
   const isTransitioning = pendingLocale !== null
+  const now = useMemo(() => new Date(), [])
 
   const onExitComplete = useCallback(() => {
     const next = pendingLocaleRef.current
@@ -67,7 +68,7 @@ export function LocaleProvider({
         locale={locale}
         messages={messagesMap[locale]}
         timeZone="Europe/Paris"
-        now={new Date()}
+        now={now}
       >
         {children}
       </NextIntlClientProvider>

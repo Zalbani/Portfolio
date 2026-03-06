@@ -4,6 +4,11 @@ import { useState, useEffect } from 'react'
 
 export const NAV_IDS = ['about', 'projects', 'experience', 'skills', 'education'] as const
 
+export function scrollToSection(id: string) {
+  if (id === 'about') return window.scrollTo({ top: 0, behavior: 'smooth' })
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+}
+
 export function useActiveSection() {
   const [active, setActive] = useState('about')
 

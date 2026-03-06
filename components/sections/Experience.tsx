@@ -37,7 +37,7 @@ export function Experience() {
                 </div>
                 <ul className="space-y-1">
                   {exp.tasks.map((task, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-ink-secondary dark:text-slate-400">
+                    <li key={`${exp.company}-${j}`} className="flex items-start gap-2 text-sm text-ink-secondary dark:text-slate-400">
                       <span className="mt-2 w-1 h-1 rounded-full bg-terra-300 dark:bg-[#00ADB5] flex-none" />
                       {task}
                     </li>

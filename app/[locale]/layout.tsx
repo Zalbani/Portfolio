@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import { LocaleProvider } from '@/components/providers/LocaleProvider'
@@ -10,20 +9,8 @@ import { ParticlesBackground } from '@/components/ui/ParticlesBackground'
 import { TopRightControls } from '@/components/layout/TopRightControls'
 import { FaviconSwitcher } from '@/components/ui/FaviconSwitcher'
 import { LocaleAnimatedContent } from '@/components/ui/LocaleAnimatedContent'
+import { ClientOnlyComponents } from '@/components/layout/ClientOnlyComponents'
 import '../globals.css'
-
-const CustomCursor = dynamic(
-  () => import('@/components/ui/CustomCursor').then((m) => m.CustomCursor),
-  { ssr: false }
-)
-const SpotlightEffect = dynamic(
-  () => import('@/components/ui/SpotlightEffect').then((m) => m.SpotlightEffect),
-  { ssr: false }
-)
-const ThemeTransitionOverlay = dynamic(
-  () => import('@/components/ui/ThemeTransitionOverlay').then((m) => m.ThemeTransitionOverlay),
-  { ssr: false }
-)
 
 const inter = Inter({
   subsets: ['latin'],
@@ -38,9 +25,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-  const t = await getTranslations({ locale: params.locale, namespace: 'meta' })
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'meta' })
   return {
     title: t('title'),
     description: t('description'),
@@ -58,9 +46,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = params
+  const { locale } = await params
   if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound()
   }
@@ -85,11 +73,9 @@ export default async function LocaleLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LocaleProvider initialLocale={locale as 'en' | 'fr'}>
-            <ThemeTransitionOverlay />
+            <ClientOnlyComponents />
             <FaviconSwitcher />
             <ParticlesBackground />
-            <SpotlightEffect />
-            <CustomCursor />
             <TopRightControls />
             <LocaleAnimatedContent>{children}</LocaleAnimatedContent>
           </LocaleProvider>

@@ -1,6 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-pastel-violet: #00ADB5;
+  --color-pastel-rose: #FFE3E1;
+  --color-pastel-terra: #FFD1D1;
+  --color-terra-50: #fff7f7;
+  --color-terra-100: #FFE3E1;
+  --color-terra-200: #FFD1D1;
+  --color-terra-300: #FFB0B0;
+  --color-terra-400: #FFA0A0;
+  --color-terra-500: #FF9494;
+  --color-terra-600: #e87070;
+  --color-terra-700: #cc5050;
+  --color-terra-800: #a03333;
+  --color-terra-900: #7a2222;
+  --color-ink: #1e1b4b;
+  --color-ink-secondary: #6b7280;
+  --color-ink-muted: #9ca3af;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
 
 :root {
   /* Light mode */
@@ -21,8 +41,10 @@
   --glass-strong-border: rgba(238, 238, 238, 0.08);
 }
 
-*, *::before, *::after {
-  cursor: none !important;
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
 }
 
 @keyframes noise-animation {

@@ -1,18 +1,13 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { useActiveSection, NAV_IDS } from '@/lib/hooks/useActiveSection'
+import { useActiveSection, NAV_IDS, scrollToSection } from '@/lib/hooks/useActiveSection'
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 export function Navigation() {
   const t = useTranslations('nav')
   const active = useActiveSection()
-
-  const scrollTo = (id: string) => {
-    if (id === 'about') return window.scrollTo({ top: 0, behavior: 'smooth' })
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-  }
 
   return (
     <nav className="flex flex-col gap-1">
@@ -21,7 +16,7 @@ export function Navigation() {
         return (
           <motion.button
             key={id}
-            onClick={() => scrollTo(id)}
+            onClick={() => scrollToSection(id)}
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 + i * 0.07, duration: 0.4 }}

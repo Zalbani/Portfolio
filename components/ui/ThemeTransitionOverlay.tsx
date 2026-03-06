@@ -21,7 +21,7 @@ const COVER_MS   = Math.round(((NUM_LAYERS - 1) * STAGGER + DURATION_IN) * 1000)
 const UNCOVER_MS = Math.round(((NUM_LAYERS - 1) * STAGGER + DURATION_OUT) * 1000) + 80
 
 export function ThemeTransitionOverlay() {
-  const { setTheme } = useTheme()
+  const { setTheme, resolvedTheme } = useTheme()
   const [phase, setPhase] = useState<'idle' | 'covering' | 'uncovering'>('idle')
   const [overlayTheme, setOverlayTheme] = useState<'dark' | 'light'>('light')
 
@@ -33,9 +33,6 @@ export function ThemeTransitionOverlay() {
 
   // Keep refs in sync
   useEffect(() => { setThemeRef.current = setTheme }, [setTheme])
-
-  // Track current resolved theme via next-themes
-  const { resolvedTheme } = useTheme()
   useEffect(() => { resolvedRef.current = resolvedTheme }, [resolvedTheme])
 
   const updatePhase = (p: typeof phase) => {
@@ -49,7 +46,7 @@ export function ThemeTransitionOverlay() {
       if (phaseRef.current !== 'idle') return
 
       const nextTheme = resolvedRef.current === 'dark' ? 'light' : 'dark'
-      setOverlayTheme(nextTheme as 'dark' | 'light')
+      setOverlayTheme(nextTheme)
       updatePhase('covering')
 
       // Once fully covered → switch theme and start uncovering

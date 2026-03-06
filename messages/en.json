@@ -1,4 +1,8 @@
 {
+  "ui": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
   "meta": {
     "title": "Alban Pierson — Full-Stack Developer",
     "description": "Portfolio of Alban Pierson, a web developer passionate about technology and motivated by the desire to learn and take on new challenges."
@@ -61,7 +65,7 @@
       {
         "name": "Oracle",
         "role": "Co-Architect",
-        "description": "Designed and built a resilient backend architecture for publishing decentralized price feeds on-chain. Three decoupled services with fault tolerance, rate limiting, and async job orchestration, built to handle high-frequency data from multiple exchanges (Binance, Bybit, Bitget) reliably.",
+        "description": "Designed and built a resilient backend architecture for publishing decentralized price feeds on-chain. Three decoupled services with fault tolerance, rate limiting, and async job orchestration, built to handle high-frequency data from multiple exchanges (Binance, Bybit, Bitget).",
         "tech": ["TypeScript", "Node.js", "Redis", "BullMQ", "Docker"],
         "link": ""
       },

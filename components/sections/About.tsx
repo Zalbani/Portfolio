@@ -18,7 +18,7 @@ const mobileSocialLinks = [
 export function About() {
   const t = useTranslations('about')
   const tSidebar = useTranslations('sidebar')
-  const tagline = t('tagline').split('')
+  const tagline = Array.from(t('tagline'))
 
   return (
     <section
@@ -44,19 +44,22 @@ export function About() {
         <ScrollReveal delay={0.1}>
           <div className="flex flex-col gap-6 max-w-xl">
             <div className="overflow-hidden">
-              <h2 className="text-3xl lg:text-4xl font-bold text-ink dark:text-slate-100 leading-tight">
+              <motion.h2
+                className="text-3xl lg:text-4xl font-bold text-ink dark:text-slate-100 leading-tight"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.012 } } }}
+              >
                 {tagline.map((char, i) => (
                   <motion.span
                     key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.012, duration: 0.3 }}
+                    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}
                   >
                     {char}
                   </motion.span>
                 ))}
-              </h2>
+              </motion.h2>
             </div>
 
             <p className="text-ink-secondary dark:text-slate-400 leading-relaxed text-base">

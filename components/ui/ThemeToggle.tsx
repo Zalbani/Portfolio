@@ -3,10 +3,12 @@
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 export function ThemeToggle() {
   const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const t = useTranslations('ui')
 
   useEffect(() => setMounted(true), [])
   if (!mounted) return <div className="w-9 h-9" />
@@ -16,7 +18,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => window.dispatchEvent(new CustomEvent('theme-toggle-request'))}
-      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+      aria-label={isDark ? t('switchToLight') : t('switchToDark')}
       className="w-9 h-9 glass rounded-xl flex items-center justify-center text-ink-secondary dark:text-slate-400 hover:text-terra-600 dark:hover:text-[#00ADB5] hover:bg-pastel-terra/30 dark:hover:bg-pastel-violet/30 transition-colors duration-200"
     >
       <AnimatePresence mode="wait" initial={false}>

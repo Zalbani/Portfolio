@@ -1,10 +1,12 @@
 'use client'
 
+import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-import { useActiveSection, NAV_IDS } from '@/lib/hooks/useActiveSection'
+import { useActiveSection, NAV_IDS, scrollToSection } from '@/lib/hooks/useActiveSection'
+import { cn } from '@/lib/utils'
 
-const icons: Record<string, React.ReactNode> = {
+const icons: Record<string, ReactNode> = {
   about: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} className="w-5 h-5">
       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -36,11 +38,6 @@ export function MobileNav() {
   const t = useTranslations('nav')
   const active = useActiveSection()
 
-  const scrollTo = (id: string) => {
-    if (id === 'about') return window.scrollTo({ top: 0, behavior: 'smooth' })
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <nav className="lg:hidden fixed bottom-3 inset-x-3 z-50">
       <div className="flex items-center rounded-2xl bg-white/80 dark:bg-[#222831]/80 backdrop-blur-xl border border-white/70 dark:border-white/10 shadow-xl shadow-[#FFD1D1]/40 dark:shadow-black/30 px-1 py-1">
@@ -49,7 +46,7 @@ export function MobileNav() {
           return (
             <button
               key={id}
-              onClick={() => scrollTo(id)}
+              onClick={() => scrollToSection(id)}
               className="relative flex-1 flex flex-col items-center gap-0.5 py-2 rounded-xl"
             >
               {isActive && (
@@ -60,20 +57,18 @@ export function MobileNav() {
                 />
               )}
               <span
-                className={`relative z-10 transition-colors duration-200 ${
-                  isActive
-                    ? 'text-[#FF9494] dark:text-[#00ADB5]'
-                    : 'text-slate-400 dark:text-slate-500'
-                }`}
+                className={cn(
+                  'relative z-10 transition-colors duration-200',
+                  isActive ? 'text-[#FF9494] dark:text-[#00ADB5]' : 'text-slate-400 dark:text-slate-500'
+                )}
               >
                 {icons[id]}
               </span>
               <span
-                className={`relative z-10 text-[9px] font-medium leading-tight text-center transition-colors duration-200 ${
-                  isActive
-                    ? 'text-[#FF9494] dark:text-[#00ADB5]'
-                    : 'text-slate-400 dark:text-slate-500'
-                }`}
+                className={cn(
+                  'relative z-10 text-[9px] font-medium leading-tight text-center transition-colors duration-200',
+                  isActive ? 'text-[#FF9494] dark:text-[#00ADB5]' : 'text-slate-400 dark:text-slate-500'
+                )}
               >
                 {t(id)}
               </span>

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { hardSkills } from '@/data/resume'
 import { GlassCard } from '@/components/ui/GlassCard'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
+import { TechBadge } from '@/components/ui/TechBadge'
 import { motion } from 'framer-motion'
 
 const devIconsBase = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons'
@@ -41,7 +42,7 @@ export function Skills() {
           {t('hardTitle')}
         </h3>
         <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 mb-10">
-          {hardSkills.map((skill, i) => (
+          {hardSkills.filter((skill) => iconMap[skill.icon]).map((skill, i) => (
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, scale: 0.85 }}
@@ -53,6 +54,8 @@ export function Skills() {
               <img
                 src={iconMap[skill.icon]}
                 alt={skill.name}
+                width={28}
+                height={28}
                 className={`w-7 h-7 object-contain${skill.invertOnDark ? ' dark:invert' : ''}`}
               />
               <span className="text-xs text-ink-secondary dark:text-slate-400 font-medium text-center leading-tight">
@@ -75,12 +78,7 @@ export function Skills() {
               </p>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="text-sm px-3 py-1 rounded-full bg-terra-50 dark:bg-[#00ADB5]/10 text-terra-700 dark:text-[#00ADB5] border border-terra-100 dark:border-[#00ADB5]/25 font-medium"
-                  >
-                    {skill}
-                  </span>
+                  <TechBadge key={skill} label={skill} />
                 ))}
               </div>
             </GlassCard>
