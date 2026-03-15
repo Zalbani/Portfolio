@@ -79,8 +79,8 @@
       {
         "name": "Social",
         "role": "Backend Developer",
-        "description": "Développement d'un microservice backend façon Twitter gérant posts, commentaires et profils utilisateurs. Feeds optimisés avec mise en cache Redis pour des temps de réponse rapides. Moteur de règles métier complet : marketing, score d'intérêt, algorithme de viralité, système de blocage, restrictions géographiques.",
-        "tech": ["TypeScript", "NestJS", "PostgreSQL", "Redis", "BullMQ", "Docker"],
+        "description": "Développement d'un microservice backend façon Twitter gérant posts, commentaires et profils utilisateurs. Feeds optimisés avec mise en cache Redis pour des temps de réponse rapides. Architecture événementielle via Symfony Messenger pour le traitement asynchrone des actions (posts, interactions). Moteur de règles métier complet : marketing, score d'intérêt, algorithme de viralité, système de blocage, restrictions géographiques.",
+        "tech": ["PHP", "Symfony", "PostgreSQL", "Redis", "Messenger", "Docker"],
         "link": ""
       },
       {
