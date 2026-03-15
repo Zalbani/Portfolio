@@ -77,6 +77,13 @@
         "link": "https://greenhouse.chiliz.com/"
       },
       {
+        "name": "Social",
+        "role": "Backend Developer",
+        "description": "Built a Twitter-like backend microservice handling posts, comments, and user profiles. Optimized feeds with Redis caching for fast response times. Full business rules engine: marketing logic, interest scoring, virality algorithm, blocking system, country-based geo-restrictions.",
+        "tech": ["TypeScript", "NestJS", "PostgreSQL", "Redis", "BullMQ", "Docker"],
+        "link": ""
+      },
+      {
         "name": "Agenda",
         "role": "Project Manager & Developer",
         "description": "Redesign of an internal tool managing all events offered by the libraries of the Lyon metropolis, led from A to Z, from conception to production.",
