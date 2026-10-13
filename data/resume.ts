@@ -1,7 +1,7 @@
 export const about = {
   name: 'Alban Pierson',
   github: 'Zalbani',
-  email: 'pro.pierson.alban@gmail.com',
+  email: 'contact@zalbani.dev',
   linkedin: 'zalbani',
   linkedinHovertext: 'Alban Pierson',
 }
